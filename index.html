@@ -1,10 +1,212 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Hi!</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Rock and Mineral Identifier</title>
+        <script src = "/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"> </script>
+        <script src = "script.js"></script>
+        <script src = "myData.js"></script>
     </head>
     <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+        <header>
+            <h1>Rock and Mineral Identifier</h1>
+        </header>
+        <nav>
+            <div class="tab" id="idTab">
+                <h3>Mineral Identifier</h3>
+            </div>
+            <div class="tab" id="mineralTab">
+                <h3>Add Mineral to Data</h3>
+            </div>
+            <div class="tab" id="rockIdTab">
+                <h3>Rock Identifier</h3>
+            </div>
+            <div class="tab" id="rockTab">
+                <h3>Add Rock to Data</h3>
+            </div>
+        </nav>
+        <main id="main">
+            <div id="identifier">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="hardness">Hardness: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="searchhardness">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sg">Specific Gravity: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="searchsg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="streak">Streak Colour: </label>
+                        </td>
+                        <td>
+                            <select id="searchstreak">
+                                <option value="">unset</option>
+                                <option value="White">White</option>
+                                <option value="Yellow">Yellow</option>
+                                <option value="Yellow-Brown">Yellow-Brown</option>
+                                <option value="Orange">Orange</option>
+                                <option value="Blueish Green">Blueish Green</option>
+                                <option value="Green">Green</option>
+                                <option value="Greenish Black">Greenish Black</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Red-Crimson">Red-Crimson</option>
+                                <option value="Grey-Black">Grey-Black</option>
+                                <option value="Greyish">Greyish</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lustre">Lustre: </label>
+                        </td>
+                        <td>
+                            <select id="searchlustre">
+                                <option value="">unset</option>
+                                <option value="Adamantine">Adamantine</option>
+                                <option value="Dull">Dull</option>
+                                <option value="Greasy">Greasy</option>
+                                <option value="Metallic">Metallic</option>
+                                <option value="Pearly">Pearly</option>
+                                <option value="Resinous">Resinous</option>
+                                <option value="Silky">Silky</option>
+                                <option value="Submetallic">Submetallic</option>
+                                <option value="Vitreous">Vitreous</option>
+                                <option value="Waxy">Waxy</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="colour">Colour: </label>
+                        </td>
+                        <td>
+                            <select id="searchcolour">
+                                <option value="">unset</option>
+                                <option value="Violet Brown">Violet Brown</option>
+                                <option value="Brown">Brown</option>
+                                <option value="Reddish Brown">Reddish Brown</option>
+                                <option value="Red">Red</option>
+                                <option value="Reddish Orange">Reddish Orange</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Orange">Orange</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Yellow-Brown">Yellow-Brown</option>
+                                <option value="Yellow">Yellow</option>
+                                <option value="Green">Green</option>
+                                <option value="Greenish">Greenish</option>
+                                <option value="Greenish Black">Greenish Black</option>
+                                <option value="Blue-Grey">Blue-Grey</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Purple">Purple</option>
+                                <option value="Indigo">Indigo</option>
+                                <option value="Pink">Pink</option>
+                                <option value="Black">Black</option>
+                                <option value="Grey">Grey</option>
+                                <option value="Greyish White">Greyish White</option>
+                                <option value="White">White</option>
+                                <option value="Colourless">Colourless</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button id="search">Search</button>
+                <p id="output"></p>
+            </div>
+            <div id="addData">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="minHard">Minimum Hardness: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="minHard">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="maxHard">Maximum Hardness: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="maxHard">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="minSG">Minimum Specific Gravity: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="minSG">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="maxSG">Maximum Specific Gravity: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="maxSG">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="streak">Streak Colour: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="streak">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lustre">Lustre List: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="lustre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="colour">Colours: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="colour">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="notes">Notes: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="notes">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password: </label>
+                        </td>
+                        <td>
+                            <input type="password" id="password">
+                        </td>
+                    </tr>
+                </table>
+                <button id="add">Add</button>
+            </div>
+        </main>
     </body>
 </html>

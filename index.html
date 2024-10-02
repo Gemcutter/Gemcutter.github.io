@@ -14,14 +14,8 @@
             <div class="tab" id="idTab">
                 <h3>Mineral Identifier</h3>
             </div>
-            <div class="tab" id="mineralTab">
-                <h3>Add Mineral to Data</h3>
-            </div>
             <div class="tab" id="rockIdTab">
                 <h3>Rock Identifier</h3>
-            </div>
-            <div class="tab" id="rockTab">
-                <h3>Add Rock to Data</h3>
             </div>
         </nav>
         <main id="main">
@@ -52,15 +46,19 @@
                                 <option value="">unset</option>
                                 <option value="White">White</option>
                                 <option value="Yellow">Yellow</option>
-                                <option value="Yellow-Brown">Yellow-Brown</option>
+                                <option value="Yellow Brown">Yellow Brown</option>
+                                <option value="Brown">Brown</option>
                                 <option value="Orange">Orange</option>
+                                <option value="Yellow-Orange">Yellow-Orange</option>
                                 <option value="Blueish Green">Blueish Green</option>
                                 <option value="Green">Green</option>
                                 <option value="Greenish Black">Greenish Black</option>
                                 <option value="Blue">Blue</option>
-                                <option value="Red-Crimson">Red-Crimson</option>
+                                <option value="Red">Red</option>
                                 <option value="Grey-Black">Grey-Black</option>
+                                <option value="Black">Black</option>
                                 <option value="Greyish">Greyish</option>
+                                <option value="Colourless">Colourless</option>
                             </select>
                         </td>
                     </tr>
@@ -104,14 +102,14 @@
                                 <option value="Green">Green</option>
                                 <option value="Greenish">Greenish</option>
                                 <option value="Greenish Black">Greenish Black</option>
-                                <option value="Blue-Grey">Blue-Grey</option>
+                                <option value="Blue Grey">Blue Grey</option>
                                 <option value="Blue">Blue</option>
                                 <option value="Purple">Purple</option>
                                 <option value="Indigo">Indigo</option>
                                 <option value="Pink">Pink</option>
                                 <option value="Black">Black</option>
                                 <option value="Grey">Grey</option>
-                                <option value="Greyish White">Greyish White</option>
+                                <option value="Greyish">Greyish</option>
                                 <option value="White">White</option>
                                 <option value="Colourless">Colourless</option>
                             </select>
@@ -120,91 +118,6 @@
                 </table>
                 <button id="search">Search</button>
                 <p id="output"></p>
-            </div>
-            <div id="addData">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Name: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="name">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="minHard">Minimum Hardness: </label>
-                        </td>
-                        <td>
-                            <input type="number" id="minHard">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="maxHard">Maximum Hardness: </label>
-                        </td>
-                        <td>
-                            <input type="number" id="maxHard">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="minSG">Minimum Specific Gravity: </label>
-                        </td>
-                        <td>
-                            <input type="number" id="minSG">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="maxSG">Maximum Specific Gravity: </label>
-                        </td>
-                        <td>
-                            <input type="number" id="maxSG">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="streak">Streak Colour: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="streak">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lustre">Lustre List: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="lustre">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="colour">Colours: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="colour">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="notes">Notes: </label>
-                        </td>
-                        <td>
-                            <input type="text" id="notes">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="password">Password: </label>
-                        </td>
-                        <td>
-                            <input type="password" id="password">
-                        </td>
-                    </tr>
-                </table>
-                <button id="add">Add</button>
             </div>
         </main>
     </body>

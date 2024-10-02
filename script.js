@@ -1,8 +1,4 @@
-const socket = io();
 myData = null;
-socket.on('data', function(data) {
-    myData = data;
-})
 
 $(document).ready(function(){
     myData = minerals;

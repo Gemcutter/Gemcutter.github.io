@@ -209,6 +209,17 @@ function search() {
     
     }
     else if (possibleMinerals.length==1) {
+        document.getElementById("output").innerHTML += "<br><br> Some information on "+possibleMinerals[0]+":";
         document.getElementById("output").innerHTML += "<br>"+myData[possibleMinerals[0]].notes
+    }
+    if (possibleMinerals.length==3) {
+        document.getElementById("output").innerHTML += "<br><br> Some information on the minerals:";
+        document.getElementById("output").innerHTML += "<table><tr><td>"+possibleMinerals[0]+"</td><td>"+myData[possibleMinerals[0]].notes+"</td></tr><tr><td>"+possibleMinerals[1]+"</td><td>"+myData[possibleMinerals[1]].notes+"</td></tr><tr><td>"+possibleMinerals[2]+"</td><td>"+myData[possibleMinerals[2]].notes+"</td></tr></table>";
+    
+    }
+    else if (possibleMinerals.length==2) {
+        document.getElementById("output").innerHTML += "<br><br> Some information on the minerals:";
+        document.getElementById("output").innerHTML += "<table><tr><td>"+possibleMinerals[0]+"</td><td>"+myData[possibleMinerals[0]].notes+"</td></tr><tr><td>"+possibleMinerals[1]+"</td><td>"+myData[possibleMinerals[1]].notes+"</td></tr></table>";
+    
     }
 }

@@ -1,53 +1,67 @@
 body {
-margin: 0px;
-padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #A89E9D;
 }
-
+p { 
+    margin: 0.25rem;
+    padding: 0.25rem;   
+}
 header {
     text-align: center;
 }
 .tab {
     text-align: center;
-    width: 20%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    box-shadow: 0px 0px 5px 2px #3f3f3f;
+    padding-left: 2%;
+    padding-right: 2%;
     cursor: pointer;
     position: relative;
+    transition: 0.2s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 nav {
     display: flex;
     overflow:hidden;
+    padding-left: 5%;
 }
-#idTab {
-    z-index: 3;
-    background-color: #ffec8a;
+header {
+    padding-top: 3%;
+    background-color: #ECDEDC;
+    box-shadow: 0px 0px 5px 2px #777777;
 }
-#mineralTab {
-    z-index: 0;
-    background-color: #ffc68a;
+h1 {
+    margin: 0px;
 }
-#addData {
+#homeTab {
+    background-color: #CABEBC;
+}
+#rockIdentifier {
     display: none;
 }
-#identifier{
-    display: grid;
+#mineralIdentifier {
+    display: none;
 }
 main {
-    width: calc(100% - 50px);
-    margin-left: 5px;
-    background-color: #ffec8a;
-    height: 60%;
-    padding: 20px;
-    z-index: 2;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: #ECDEDC;
+    min-height: 60%;
+    padding: 3%;
     position: relative;
     box-shadow: 0px 0px 5px 2px #3f3f3f;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5%;
 }
 label {
     min-width: 200px;
@@ -58,3 +72,15 @@ table {
 #search, #add {
     width: 10%;
 }
+footer {
+    padding: 2%;
+    width: 96%;
+    background-color: #645E5D;
+}
+html::-webkit-scrollbar {
+    display: none;
+  }
+html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }

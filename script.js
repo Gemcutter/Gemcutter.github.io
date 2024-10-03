@@ -3,18 +3,28 @@ myData = null;
 $(document).ready(function(){
     myData = minerals;
     $("#idTab").click(function(){
-        document.getElementById("identifier").style.display = 'grid';
-        document.getElementById("idTab").style.zIndex = 3;
-        document.getElementById('main').style.backgroundColor = "#ffec8a";
-        document.getElementById("mineralTab").style.zIndex = 0;
-        document.getElementById("addData").style.display = 'none';
+        document.getElementById("mineralIdentifier").style.display = 'grid';
+        document.getElementById('idTab').style.backgroundColor = "#CABEBC";
+        document.getElementById("rockIdentifier").style.display = 'none';
+        document.getElementById("home").style.display = 'none';
+        document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+        document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
     });
-    $("#mineralTab").click(function(){
-        document.getElementById("addData").style.display = 'grid';
-        document.getElementById("mineralTab").style.zIndex = 3;
-        document.getElementById('main').style.backgroundColor = "#ffc68a";
-        document.getElementById("idTab").style.zIndex = 0;
-        document.getElementById("identifier").style.display = 'none';
+    $("#rockIdTab").click(function(){
+        document.getElementById("rockIdentifier").style.display = 'grid';
+        document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
+        document.getElementById("mineralIdentifier").style.display = 'none';
+        document.getElementById("home").style.display = 'none';
+        document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
+        document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+    });
+    $("#homeTab").click(function(){
+        document.getElementById("home").style.display = 'grid';
+        document.getElementById('homeTab').style.backgroundColor = "#CABEBC";
+        document.getElementById("mineralIdentifier").style.display = 'none';
+        document.getElementById("rockIdentifier").style.display = 'none';
+        document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
+        document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
     });
     $("#add").click(function(){
         mineralName = document.getElementById("name").value

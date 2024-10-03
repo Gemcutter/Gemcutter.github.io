@@ -1,25 +1,48 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Rock and Mineral Identifier</title>
+        <title>RockID</title>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"> </script>
         <script src = "script.js"></script>
         <script src = "myData.js"></script>
     </head>
     <body>
         <header>
-            <h1>Rock and Mineral Identifier</h1>
+            <h1 class="unselectable">RockID</h1>
+            <nav>
+                <div class="tab unselectable" id="homeTab">
+                    <h3>Home</h3>
+                </div>
+                <div class="tab unselectable" id="idTab">
+                    <h3>Mineral Identifier</h3>
+                </div>
+                <div class="tab unselectable" id="rockIdTab">
+                    <h3>Rock Identifier</h3>
+                </div>
+            </nav>
         </header>
-        <nav>
-            <div class="tab" id="idTab">
-                <h3>Mineral Identifier</h3>
-            </div>
-            <div class="tab" id="rockIdTab">
-                <h3>Rock Identifier</h3>
-            </div>
-        </nav>
         <main id="main">
-            <div id="identifier">
+            <div id="home" class="unselectable">
+                <h2>
+                    Information on RockID
+                </h2>
+                <p>
+                    This is a simple tool for amatuer geologists or rockhounds. 
+                </p>
+                <p>
+                    It is meant as a quick way to narrow down possible options but depending on your inputs it may not give you just one rock or mineral. 
+                </p>
+                <p>
+                    To avoid this and improve the accuracy of RockID we recommended trying to tweak the values you have entered and see if any minerals are there for more than one set of inputs.
+                </p>
+                <p>
+                    There are also settings that change the margin of error on inputs so you can be as accurate or general as you need.
+                </p>
+                <p>
+                    For example on a mineral that is mixed with other minerals you may wish to increase the margin of error on the density.
+                </p>
+            </div>
+            <div id="mineralIdentifier">
                 <table>
                     <tr>
                         <td>
@@ -54,6 +77,7 @@
                                 <option value="Green">Green</option>
                                 <option value="Greenish Black">Greenish Black</option>
                                 <option value="Blue">Blue</option>
+                                <option value="Purple">Purple</option>
                                 <option value="Red">Red</option>
                                 <option value="Grey-Black">Grey-Black</option>
                                 <option value="Black">Black</option>
@@ -119,6 +143,12 @@
                 <button id="search">Search</button>
                 <p id="output"></p>
             </div>
+            <div id="rockIdentifier">
+
+            </div>
         </main>
+        <footer>
+            <p>v 0.3.0</p>
+        </footer>
     </body>
 </html>

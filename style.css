@@ -48,6 +48,9 @@ h1 {
 #rockIdentifier {
     display: none;
 }
+#rockIdentifier div {
+    width: 50%;
+}
 #mineralIdentifier {
     display: none;
 }
@@ -71,6 +74,9 @@ table {
 }
 #search, #add {
     width: 10%;
+}
+#reset, #input {
+    visibility: hidden;
 }
 footer {
     padding: 2%;

@@ -54,7 +54,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="sg">Specific Gravity: </label>
+                            <label for="sg">Specific Gravity (Density): </label>
                         </td>
                         <td>
                             <input type="number" id="searchsg">
@@ -144,11 +144,22 @@
                 <p id="output"></p>
             </div>
             <div id="rockIdentifier">
-
+                <div>
+                    <h2 id="question">Press start to begin.</h2>
+                    <select id="input">
+    
+                    </select>
+                    <input type="button" value="Start" id="submit">
+                    <input type="button" value="Reset" id="reset">
+                </div>
+                <div id="definitions">
+                    <h2>Definitions</h2>
+                    <h3></h3>
+                </div>
             </div>
         </main>
         <footer>
-            <p>v 0.3.0</p>
+            <p>v 0.4.0</p>
         </footer>
     </body>
 </html>

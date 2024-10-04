@@ -11,7 +11,7 @@ $(document).ready(function(){
         document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
     });
     $("#rockIdTab").click(function(){
-        document.getElementById("rockIdentifier").style.display = 'grid';
+        document.getElementById("rockIdentifier").style.display = 'flex';
         document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
         document.getElementById("mineralIdentifier").style.display = 'none';
         document.getElementById("home").style.display = 'none';
@@ -53,6 +53,12 @@ $(document).ready(function(){
     });
     $("#search").click(function(){
         search();
+    });
+    $("#submit").click(function(){
+        decisionTree();
+    });
+    $("#reset").click(function(){
+        reset();
     });
 });
 
@@ -222,4 +228,157 @@ function search() {
         document.getElementById("output").innerHTML += "<table><tr><td>"+possibleMinerals[0]+"</td><td>"+myData[possibleMinerals[0]].notes+"</td></tr><tr><td>"+possibleMinerals[1]+"</td><td>"+myData[possibleMinerals[1]].notes+"</td></tr></table>";
     
     }
+}
+let questions = {
+    "type":"Is the rock igneous, metamorphic or sedimentary?",
+    "grain size":"What size are the grains?",
+    "colour":"What colour is the rock?",
+    "foliated":"Does the rock have obvious layers, bands or stripes?",
+    "glassScratch":"Does the rock scratch glass?"
+}
+
+let steps = {};
+let rockAccuracy = {};
+let prevAttribute = '';
+function decisionTree() {
+    let rockCount = 0;
+    let attributes = {};
+    let attributeCounts = {};
+    let attributeInversions = {};
+    let attributeValues = ["I don't know"];
+    if (document.getElementById('input').value!="") {
+        steps[prevAttribute] = document.getElementById('input').value;
+    }
+    if (isEmpty(steps)) {
+        possibleRocks = rocks;
+    }
+    else {
+        possibleRocks = {};
+        for (let i in steps) {
+            console.log('steps')
+            for (let j in rocks) {
+                console.log("rocks")
+                let exists = false;
+                for (let k in rocks[j][i]) {
+                    if (rocks[j][i][k] == steps[i]) {
+                        exists = true;
+                    }
+                }
+                if (!exists) {
+                    if (rockAccuracy[j]==null) {
+                        rockAccuracy[j] = 1;
+                    }
+                    else {
+                        rockAccuracy[j] += 1;
+                    }
+                }
+                else {
+                    if (rockAccuracy[j]==null) {
+                        rockAccuracy[j] = 0;
+                    }
+                }
+            }
+        }
+    }
+    for (let i in rockAccuracy) {
+        if (rockAccuracy[i]==0) {
+            possibleRocks[i] = rocks[i];
+        }
+    }
+    for (let i in possibleRocks) {
+        rockCount++;
+        for (let attribute in possibleRocks[i]) {
+            if (attributeCounts[attribute]==null) {
+                attributeCounts[attribute] = {};
+            }
+            for (let option in possibleRocks[i][attribute]) {
+                if (attributeCounts[attribute][possibleRocks[i][attribute][option]]==null) {
+                    attributeCounts[attribute][possibleRocks[i][attribute][option]] = 1;
+                }
+                else {
+                    attributeCounts[attribute][possibleRocks[i][attribute][option]] += 1;
+                }
+            }
+        }
+    }
+    for (let i in attributeCounts) {
+        attributeInversions[i] = {};
+        for (let j in attributeCounts[i]) {
+            attributeInversions[i][j] = rockCount-attributeCounts[i][j];
+        }
+    }
+    for (let i in attributeCounts) {
+        let avg = 0;
+        let divisor = 0;
+        for (let j in attributeCounts[i]) {
+            avg += attributeInversions[i][j]*attributeCounts[i][j];
+            divisor += attributeCounts[i][j];
+        }
+        avg = avg/divisor;
+        attributes[i] = avg;
+    }
+    let bestData = "";
+    let bestAvg = 0;
+    for (let i in attributes) {
+        if (bestData=="") {
+            bestData = i;
+            bestAvg = attributes[i];
+        }
+        else if (bestAvg<attributes[i]) {
+            bestData = i;
+            bestAvg = attributes[i];
+        }
+    }
+    for (let i in attributeCounts[bestData]) {
+        attributeValues.push(i)
+    }
+    if (getObjLen(possibleRocks)>1) {
+        document.getElementById("input").style.visibility = "visible";
+        document.getElementById("submit").value = "Submit";
+        document.getElementById("question").innerText = questions[bestData];
+        prevAttribute = bestData;
+        document.getElementById("input").innerHTML = '';
+        for (let i in attributeValues) {
+            document.getElementById("input").innerHTML += "<option value='"+attributeValues[i]+"'>"+attributeValues[i]+"</option>";
+        }
+    }
+    else if (getObjLen(possibleRocks)==1) {
+        for (let i in possibleRocks) {
+            document.getElementById("submit").value = "Start";
+            document.getElementById("reset").style.visibility = "visible";
+            document.getElementById("submit").style.visibility = "hidden";
+            document.getElementById("question").innerText = i;
+            document.getElementById("input").innerHTML = '';
+            document.getElementById("input").style.visibility = "hidden";
+        }
+    }
+    console.log(attributeCounts);
+    console.log(attributeInversions);
+    console.log(attributes);
+    console.log(bestData);
+    console.log(attributeValues);
+}   
+
+function reset() {
+    document.getElementById("submit").style.visibility = "visible";
+    document.getElementById("reset").style.visibility = "hidden";
+    document.getElementById("question").innerText = "Press start to begin.";
+    steps = {};
+    rockAccuracy = {};
+}
+
+function isEmpty(obj) {
+    let empty = true;
+    for (let i in obj) {
+        empty = false;
+        break;
+    }
+    return empty;
+}
+function getObjLen(obj) {
+    let len = 0;
+    for (let i in obj) {
+        len ++;
+    }
+    return len;
 }

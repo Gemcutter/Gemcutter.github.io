@@ -245,9 +245,10 @@ function decisionTree() {
     let attributes = {};
     let attributeCounts = {};
     let attributeInversions = {};
-    let attributeValues = ["I don't know"];
+    let attributeValues = [];
     if (document.getElementById('input').value!="") {
-        steps[prevAttribute] = document.getElementById('input').value;
+        console.log($('#input').val())
+        steps[prevAttribute] = ""+document.getElementById('input').value;
     }
     if (isEmpty(steps)) {
         possibleRocks = rocks;
@@ -285,6 +286,7 @@ function decisionTree() {
             possibleRocks[i] = rocks[i];
         }
     }
+    console.log(possibleRocks)
     for (let i in possibleRocks) {
         rockCount++;
         for (let attribute in possibleRocks[i]) {
@@ -320,14 +322,24 @@ function decisionTree() {
     let bestData = "";
     let bestAvg = 0;
     for (let i in attributes) {
-        if (bestData=="") {
-            bestData = i;
-            bestAvg = attributes[i];
+        isValid = true;
+        for (let j in steps) {
+            if (i==j) {
+                isValid = false;
+            }
         }
-        else if (bestAvg<attributes[i]) {
-            bestData = i;
-            bestAvg = attributes[i];
+        console.log(isValid)
+        if (isValid) {
+            if (bestData=="") {
+                bestData = i;
+                bestAvg = attributes[i];
+            }
+            else if (bestAvg<attributes[i]) {
+                bestData = i;
+                bestAvg = attributes[i];
+            }
         }
+        
     }
     for (let i in attributeCounts[bestData]) {
         attributeValues.push(i)
@@ -335,11 +347,35 @@ function decisionTree() {
     if (getObjLen(possibleRocks)>1) {
         document.getElementById("input").style.visibility = "visible";
         document.getElementById("submit").value = "Submit";
-        document.getElementById("question").innerText = questions[bestData];
-        prevAttribute = bestData;
-        document.getElementById("input").innerHTML = '';
-        for (let i in attributeValues) {
-            document.getElementById("input").innerHTML += "<option value='"+attributeValues[i]+"'>"+attributeValues[i]+"</option>";
+        if (questions[bestData]!=null) {
+            document.getElementById("question").innerText = questions[bestData];
+            prevAttribute = bestData;
+            document.getElementById("input").innerHTML = '';
+            for (let i in attributeValues) {
+                document.getElementById("input").innerHTML += '<option value="'+attributeValues[i]+'">'+attributeValues[i]+'</option>';
+            }
+        }
+        else {
+            document.getElementById("submit").value = "Start";
+            document.getElementById("reset").style.visibility = "visible";
+            document.getElementById("submit").style.visibility = "hidden";
+            document.getElementById("input").innerHTML = '';
+            document.getElementById("input").style.visibility = "hidden";
+            document.getElementById("question").innerHTML = "Your rock could be "
+            let length = getObjLen(possibleRocks);
+            let count = 0;
+            for (let i in possibleRocks) {
+                count++;
+                if (count<length-1) {
+                    document.getElementById("question").innerHTML += i+', ';
+                }
+                else if (count<length) {
+                    document.getElementById("question").innerHTML += i+' or ';
+                }
+                if (count==length) {
+                    document.getElementById("question").innerHTML += i+'.';
+                }
+            }
         }
     }
     else if (getObjLen(possibleRocks)==1) {

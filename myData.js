@@ -4553,14 +4553,14 @@ var minerals = {
 var rocks = {
     "Basalt":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Tachylytic"],
+        "grain size":["I don\'t know","Aphantic","Tachylytic"],
         "colour":["Black","Blackish Grey","Reddish","Greenish"],
         "foliated":["No"],
         "glassScratch":["Yes"]
     },
     "Obsidian":{
         "type":["Igneous"],
-        "grain size":["Vitreous"],
+        "grain size":["I don\'t know","Vitreous"],
         "colour":["Black","Brownish","Reddish"],
         "foliated":["No"],
         "glassScratch":["Yes"]

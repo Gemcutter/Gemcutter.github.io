@@ -116,12 +116,18 @@ function search() {
             }
         }
         if (streak!="") {
-            if (myData[i].streak!=streak) {
+            let inArray = false;
+            for (let j in myData[i].streak) {
+                if (myData[i].streak[j]==streak) {
+                    inArray  = true;
+                }
+            }
+            if (!inArray) {
                 continue
             }
         }
         if (lustre!="") {
-            inArray = false;
+            let inArray = false;
             for (let j in myData[i].lustre) {
                 if (myData[i].lustre[j]==lustre) {
                     inArray = true;
@@ -132,7 +138,7 @@ function search() {
             }
         }
         if (colour!="") {
-            inArray = false;
+            let inArray = false;
             for (let j in myData[i].colour) {
                 if (myData[i].colour[j]==colour) {
                     inArray = true;
@@ -231,9 +237,11 @@ function search() {
 }
 let questions = {
     "type":"Is the rock igneous, metamorphic or sedimentary?",
-    "grain size":"What size are the grains?",
+    "grain size":"How would you describe the grain size?",
     "colour":"What colour is the rock?",
     "foliated":"Does the rock have obvious layers, bands or stripes?",
+    "vinegarReaction":"Does the rock react to vinegar when powdered?",
+    "texture":"How would you best describe the texture of the rock?",
     "glassScratch":"Does the rock scratch glass?"
 }
 

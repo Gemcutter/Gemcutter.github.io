@@ -21,7 +21,7 @@ var minerals = {
             "Greenish",
             "Grey"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Scarbroite": {
         "hardness": {
@@ -41,7 +41,7 @@ var minerals = {
         "colour": [
             "White"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Aluminite": {
         "hardness": {
@@ -60,9 +60,9 @@ var minerals = {
         ],
         "colour": [
             "White",
-            "Greyish White"
+            "Greyish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Carnallite": {
         "hardness": {
@@ -86,7 +86,7 @@ var minerals = {
             "Reddish Brown",
             "Colourless"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Chlorite": {
         "hardness": {
@@ -113,7 +113,7 @@ var minerals = {
             "Yellow",
             "Brown"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Kaolinite": {
         "hardness": {
@@ -136,7 +136,7 @@ var minerals = {
             "Greenish",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Nitratine": {
         "hardness": {
@@ -157,7 +157,7 @@ var minerals = {
             "White",
             "Grey"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Chlorargyrite": {
         "hardness": {
@@ -181,7 +181,7 @@ var minerals = {
             "Brown",
             "Violet Brown"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Ulexite": {
         "hardness": {
@@ -189,7 +189,7 @@ var minerals = {
             "max": 2.5
         },
         "sg": {
-            "min": 1.9,
+            "min": 1.6,
             "max": 2
         },
         "streak": [
@@ -202,7 +202,7 @@ var minerals = {
             "White",
             "Colourless"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Sylvite": {
         "hardness": {
@@ -226,7 +226,7 @@ var minerals = {
             "Blue",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Halite": {
         "hardness": {
@@ -277,7 +277,7 @@ var minerals = {
             "Yellow",
             "Brown"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Gypsum": {
         "hardness": {
@@ -303,7 +303,7 @@ var minerals = {
             "Brown",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Vivianite": {
         "hardness": {
@@ -329,7 +329,7 @@ var minerals = {
             "Blue",
             "Indigo"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Melanterite": {
         "hardness": {
@@ -352,7 +352,7 @@ var minerals = {
             "Green",
             "Bluish Green"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Epsomite": {
         "hardness": {
@@ -399,7 +399,7 @@ var minerals = {
             "Brown",
             "Greenish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Zinnwaldite": {
         "hardness": {
@@ -424,7 +424,7 @@ var minerals = {
             "Yellow",
             "Greenish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Hydrozincite": {
         "hardness": {
@@ -494,7 +494,7 @@ var minerals = {
             "Grey",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Jouravskite": {
         "hardness": {
@@ -517,7 +517,7 @@ var minerals = {
             "Greenish",
             "Green"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Mendipite": {
         "hardness": {
@@ -539,7 +539,7 @@ var minerals = {
             "Bronze",
             "Pink"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Ferrimolybdite-Fine": {
         "hardness": {
@@ -559,7 +559,7 @@ var minerals = {
         "colour": [
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Ferrimolybdite-Massive": {
         "hardness": {
@@ -580,7 +580,7 @@ var minerals = {
         "colour": [
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Cryolite": {
         "hardness": {
@@ -795,10 +795,9 @@ var minerals = {
             "Colourless",
             "Purple",
             "Grey",
-            "Blue",
-            "Grey"
+            "Blue Grey"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Calcite": {
         "hardness": {
@@ -889,8 +888,7 @@ var minerals = {
             "max": 7.1
         },
         "streak": [
-            "Yellow",
-            "Brown"
+            "Yellow Brown"
         ],
         "lustre": [
             "Resinous",
@@ -927,7 +925,7 @@ var minerals = {
             "Greyish",
             "Pink"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Cerussite": {
         "hardness": {
@@ -982,6 +980,30 @@ var minerals = {
             "Brown"
         ],
         "notes": "When not blue it can be distinguished from barite with a burn test; celestite burns red and barite green."
+    },
+    "Barite": {
+        "hardness": {
+            "min": 3,
+            "max": 3.5
+        },
+        "sg": {
+            "min": 4.5,
+            "max": 4.5
+        },
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Colourless",
+            "White",
+            "Yellow",
+            "Red",
+            "Blue"
+        ],
+        "notes": "Can form in a rosette called a desert rose."
     },
     "Witherite": {
         "hardness": {
@@ -1062,7 +1084,7 @@ var minerals = {
             "Greyish",
             "White"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Anhydrite": {
         "hardness": {
@@ -1134,8 +1156,7 @@ var minerals = {
         "colour": [
             "Green",
             "Grey",
-            "Blue",
-            "Grey",
+            "Blue Grey",
             "Brown",
             "Black"
         ],
@@ -1270,7 +1291,7 @@ var minerals = {
             "Greenish",
             "White"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Bayldonite": {
         "hardness": {
@@ -1348,7 +1369,7 @@ var minerals = {
             "max": 4
         },
         "sg": {
-            "min": 2.9,
+            "min": 2.8,
             "max": 2.9
         },
         "streak": [
@@ -1389,7 +1410,7 @@ var minerals = {
             "Greyish",
             "White"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Aragonite": {
         "hardness": {
@@ -1415,8 +1436,7 @@ var minerals = {
             "Brown",
             "Green",
             "Greenish",
-            "Blue",
-            "Grey",
+            "Blue Grey",
             "Greyish"
         ],
         "notes": "Fizzes in acid. Fluoresces in UV light. Grows different shapes compared to calcite."
@@ -1601,7 +1621,7 @@ var minerals = {
             "Green",
             "Black"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Andalusite": {
         "hardness": {
@@ -1625,7 +1645,7 @@ var minerals = {
             "Brown",
             "Greyish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Sillimanite": {
         "hardness": {
@@ -1633,8 +1653,8 @@ var minerals = {
             "max": 7
         },
         "sg": {
-            "min": 3.2,
-            "max": 3.3
+            "min": 3.24,
+            "max": 3.24
         },
         "streak": [
             "White"
@@ -1652,7 +1672,7 @@ var minerals = {
             "Colourless",
             "Blue"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Smithsonite": {
         "hardness": {
@@ -1693,8 +1713,8 @@ var minerals = {
             "max": 4.5
         },
         "sg": {
-            "min": 3.8,
-            "max": 3.9
+            "min": 3.78,
+            "max": 3.93
         },
         "streak": [
             "White"
@@ -1709,7 +1729,7 @@ var minerals = {
             "Pink",
             "Colourless"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Phillipsite": {
         "hardness": {
@@ -1755,14 +1775,13 @@ var minerals = {
         ],
         "colour": [
             "Blue",
-            "Blue",
-            "Grey",
+            "Blue Grey",
             "Grey",
             "Greyish",
             "Brown",
             "Black"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Colemanite": {
         "hardness": {
@@ -1811,7 +1830,7 @@ var minerals = {
             "Green",
             "Greenish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Scheelite": {
         "hardness": {
@@ -1915,7 +1934,7 @@ var minerals = {
             "Pink",
             "Purple"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Apatite": {
         "hardness": {
@@ -1969,7 +1988,7 @@ var minerals = {
             "Brown",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Monazite": {
         "hardness": {
@@ -1982,8 +2001,7 @@ var minerals = {
         },
         "streak": [
             "White",
-            "Yellow",
-            "Brown"
+            "Yellow Brown"
         ],
         "lustre": [
             "Resinous",
@@ -2017,8 +2035,7 @@ var minerals = {
         },
         "streak": [
             "White",
-            "Red",
-            "Crimson"
+            "Red"
         ],
         "lustre": [
             "Adamantine",
@@ -2036,7 +2053,7 @@ var minerals = {
             "Grey",
             "Greyish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Analcime": {
         "hardness": {
@@ -2062,7 +2079,7 @@ var minerals = {
             "Yellow",
             "Red"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Natrolite": {
         "hardness": {
@@ -2113,7 +2130,7 @@ var minerals = {
             "Green",
             "Greenish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Perovskite": {
         "hardness": {
@@ -2144,7 +2161,7 @@ var minerals = {
             "Yellow",
             "Orange"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Lazurite": {
         "hardness": {
@@ -2192,7 +2209,7 @@ var minerals = {
             "Pink",
             "Yellow"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Turquoise": {
         "hardness": {
@@ -2297,7 +2314,7 @@ var minerals = {
             "Grey",
             "Greyish"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Nosean": {
         "hardness": {
@@ -2325,7 +2342,7 @@ var minerals = {
             "Greenish",
             "Colourless"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Anatase": {
         "hardness": {
@@ -2351,11 +2368,10 @@ var minerals = {
             "Yellow",
             "Brown",
             "Yellow",
-            "Blue",
-            "Grey",
+            "Blue Grey",
             "Grey"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Nephelite": {
         "hardness": {
@@ -2380,7 +2396,7 @@ var minerals = {
             "Greyish",
             "Brown"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Leucite": {
         "hardness": {
@@ -2403,7 +2419,7 @@ var minerals = {
             "Greyish",
             "Colourless"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Rhodonite": {
         "hardness": {
@@ -2428,7 +2444,7 @@ var minerals = {
             "Yellow",
             "Grey"
         ],
-        "notes": ""
+        "notes": "No notes"
     },
     "Actinolite": {
         "hardness": {
@@ -2436,8 +2452,8 @@ var minerals = {
             "max": 6
         },
         "sg": {
-            "min": 3,
-            "max": 3.1
+            "min": 2.9,
+            "max": 3.4
         },
         "streak": [
             "White"
@@ -2536,2033 +2552,3726 @@ var minerals = {
     },
     "Augite": {
         "hardness": {
-            "min": "5",
-            "max": "6.5"
+            "min": 5,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.2",
-            "max": "3.6"
+            "min": 3.2,
+            "max": 3.6
         },
-        "streak": "White,Green,Greyish",
-        "lustre": "Vitreous,Dull,Resinous",
-        "colour": "Green,Brown,Black,Greenish"
+        "streak": [
+            "White",
+            "Green",
+            "Greyish"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull",
+            "Resinous"
+        ],
+        "colour": [
+            "Green",
+            "Brown",
+            "Black",
+            "Greenish"
+        ],
+        "notes": "Pyroxene"
     },
     "Zoisite": {
         "hardness": {
-            "min": "6.5",
-            "max": "6.5"
+            "min": 6.5,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.3",
-            "max": "3.3"
+            "min": 3.3,
+            "max": 3.3
         },
-        "streak": "White",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Grey,Green,Brown,Blue,Red"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Grey",
+            "Green",
+            "Brown",
+            "Blue",
+            "Red"
+        ],
+        "notes": "No notes"
     },
     "Orthoclase": {
         "hardness": {
-            "min": "6",
-            "max": "6"
+            "min": 6,
+            "max": 6
         },
         "sg": {
-            "min": "2.5",
-            "max": "2.6"
+            "min": 2.53,
+            "max": 2.63
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "White,Yellow,Red"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "White",
+            "Yellow",
+            "Red"
+        ],
+        "notes": "No notes"
     },
     "Albite": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.7"
+            "min": 2.6,
+            "max": 2.7
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Yellow,Red,White"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Yellow",
+            "Red",
+            "White"
+        ],
+        "notes": "Fluorscent under UV"
     },
     "Anorthite": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "2.7",
-            "max": "2.8"
+            "min": 2.72,
+            "max": 2.76
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Colourless,White,Grey,Greyish,Pink,Greenish,Green"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Colourless",
+            "White",
+            "Grey",
+            "Greyish",
+            "Pink",
+            "Greenish",
+            "Green"
+        ],
+        "notes": "No notes"
     },
     "Plagioclase": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "2.61",
-            "max": "2.76"
+            "min": 2.61,
+            "max": 2.76
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "White,Grey,Blue.Red,Greenish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "White",
+            "Grey",
+            "Blue.Red",
+            "Greenish"
+        ],
+        "notes": "No notes"
     },
     "Prehnite": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "2.8",
-            "max": "2.95"
+            "min": 2.8,
+            "max": 2.95
         },
-        "streak": "Colourless",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Colourless,Grey,Yellow,Green,White,Greyish,Greenish"
+        "streak": [
+            "Colourless"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Colourless",
+            "Grey",
+            "Yellow",
+            "Green",
+            "White",
+            "Greyish",
+            "Greenish"
+        ],
+        "notes": "Fluorescent in UV"
     },
     "Jadeite": {
         "hardness": {
-            "min": "6.5",
-            "max": "7"
+            "min": 6.5,
+            "max": 7
         },
         "sg": {
-            "min": "3.25",
-            "max": "3.35"
+            "min": 3.25,
+            "max": 3.35
         },
-        "streak": "White",
-        "lustre": "Vitreous,Dull",
-        "colour": "Green,White,Greenish,Greyish,Purple"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Green",
+            "White",
+            "Greenish",
+            "Greyish",
+            "Purple"
+        ],
+        "notes": "Very expensiive"
     },
     "Vesuvianite": {
         "hardness": {
-            "min": "6.5",
-            "max": "6.5"
+            "min": 6.5,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.32",
-            "max": "3.45"
+            "min": 3.32,
+            "max": 3.45
         },
-        "streak": "White",
-        "lustre": "Vitreous,Greasy,Resinous",
-        "colour": "Green,Greenish,Brown,Yellow,Blue,Purple"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Greasy",
+            "Resinous"
+        ],
+        "colour": [
+            "Green",
+            "Greenish",
+            "Brown",
+            "Yellow",
+            "Blue",
+            "Purple"
+        ],
+        "notes": "Generally completely embedded in limestone"
     },
     "Cassiterite": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "6.6",
-            "max": "7"
+            "min": 6.6,
+            "max": 7
         },
-        "streak": "White,Brown",
-        "lustre": "Adamantine,Greasy",
-        "colour": "Black,Reddish Brown,Brown,Yellow,Colourless,Green,Greenish,Grey,Greyish"
+        "streak": [
+            "White",
+            "Brown"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Greasy"
+        ],
+        "colour": [
+            "Black",
+            "Reddish Brown",
+            "Brown",
+            "Yellow",
+            "Colourless",
+            "Green",
+            "Greenish",
+            "Grey",
+            "Greyish"
+        ],
+        "notes": "High refractive index. Tin ore."
     },
     "Epidote": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "3.3",
-            "max": "3.6"
+            "min": 3.3,
+            "max": 3.6
         },
-        "streak": "White,Greyish",
-        "lustre": "Vitreous",
-        "colour": "Green,Greenish,Brown,Black,Yellow"
+        "streak": [
+            "White",
+            "Greyish"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Green",
+            "Greenish",
+            "Brown",
+            "Black",
+            "Yellow"
+        ],
+        "notes": "Associated with vesuvianite and garnets"
     },
     "Forsterite": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "3.21",
-            "max": "3.33"
+            "min": 3.21,
+            "max": 3.33
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Green,Colourless,Yellow,Greenish,White"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Green",
+            "Colourless",
+            "Yellow",
+            "Greenish",
+            "White"
+        ],
+        "notes": "Olivine. Found in mafic and ultramafic rocks like basalt or gabbro."
     },
     "Fayalite": {
         "hardness": {
-            "min": "6.5",
-            "max": "6.5"
+            "min": 6.5,
+            "max": 6.5
         },
         "sg": {
-            "min": "4.39",
-            "max": "4.4"
+            "min": 4.39,
+            "max": 4.4
         },
-        "streak": "White",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Brown,Black,Greenish,Yellow,Green,Yellow-Brown"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Brown",
+            "Black",
+            "Greenish",
+            "Yellow",
+            "Green",
+            "Yellow",
+            "Brown"
+        ],
+        "notes": "Olivine. Found in mafic and ultramafic rocks like basalt or gabbro."
     },
     "Axinite": {
         "hardness": {
-            "min": "6",
-            "max": "7.5"
+            "min": 6,
+            "max": 7.5
         },
         "sg": {
-            "min": "3.18",
-            "max": "3.37"
+            "min": 3.18,
+            "max": 3.37
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Reddish Brown,Yellow,Colourless,Blue,Purple,Grey,Greyish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Reddish Brown",
+            "Yellow",
+            "Colourless",
+            "Blue",
+            "Purple",
+            "Grey",
+            "Greyish"
+        ],
+        "notes": "No notes"
     },
     "Spodumene": {
         "hardness": {
-            "min": "6.5",
-            "max": "7"
+            "min": 6.5,
+            "max": 7
         },
         "sg": {
-            "min": "3.03",
-            "max": "3.23"
+            "min": 3.03,
+            "max": 3.23
         },
-        "streak": "White",
-        "lustre": "Vitreous,Pearly",
-        "colour": "White,Colourless,Grey,Greyish,Pink,Purple,Yellow,Green"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "White",
+            "Colourless",
+            "Grey",
+            "Greyish",
+            "Pink",
+            "Purple",
+            "Yellow",
+            "Green"
+        ],
+        "notes": "Source of lithium"
     },
     "Andradite": {
         "hardness": {
-            "min": "6.5",
-            "max": "7.5"
+            "min": 6.5,
+            "max": 7.5
         },
         "sg": {
-            "min": "3.7",
-            "max": "4.1"
+            "min": 3.7,
+            "max": 4.1
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Greenish,Greyish,Green,Colourless,Yellow-Brown,Red,Grey,Black"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Greenish",
+            "Greyish",
+            "Green",
+            "Colourless",
+            "Yellow",
+            "Brown",
+            "Red",
+            "Grey",
+            "Black"
+        ],
+        "notes": "A type of garnet."
     },
     "Grossular": {
         "hardness": {
-            "min": "6.5",
-            "max": "7.5"
+            "min": 6.5,
+            "max": 7.5
         },
         "sg": {
-            "min": "3.42",
-            "max": "3.72"
+            "min": 3.42,
+            "max": 3.72
         },
-        "streak": "White",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Colourless,Yellow,Orange,Green,Red,Grey,Black,Greyish,Greenish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Colourless",
+            "Yellow",
+            "Orange",
+            "Green",
+            "Red",
+            "Grey",
+            "Black",
+            "Greyish",
+            "Greenish"
+        ],
+        "notes": "A type of garnet"
     },
     "Almandine": {
         "hardness": {
-            "min": "6.5",
-            "max": "8"
+            "min": 6.5,
+            "max": 8
         },
         "sg": {
-            "min": "4.09",
-            "max": "4.31"
+            "min": 4.09,
+            "max": 4.31
         },
-        "streak": "White",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Brown,Reddish Brown,Red,Black"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Brown",
+            "Reddish Brown",
+            "Red",
+            "Black"
+        ],
+        "notes": "A type of garnet."
     },
     "Pyrope": {
         "hardness": {
-            "min": "7.5",
-            "max": "7.5"
+            "min": 7.5,
+            "max": 7.5
         },
         "sg": {
-            "min": "3.65",
-            "max": "3.84"
+            "min": 3.65,
+            "max": 3.84
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Red,Reddish Orange,Pink,Black"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Red",
+            "Reddish Orange",
+            "Pink",
+            "Black"
+        ],
+        "notes": "A type of almandine (garnet)"
     },
     "Quartz": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "White,Colourless"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "White",
+            "Colourless",
+            "Grey",
+            "Yellow"
+        ],
+        "notes": "No notes"
     },
     "Smoky Quartz": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Brown,Grey"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Brown",
+            "Grey"
+        ],
+        "notes": "Type of Quartz"
     },
     "Morion": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Black,Brown"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Black",
+            "Brown"
+        ],
+        "notes": "Type of Quartz"
     },
     "Amethyst": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Purple"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Purple"
+        ],
+        "notes": "Type of Quartz"
     },
     "Citrine": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Orange,Yellow"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Orange",
+            "Yellow"
+        ],
+        "notes": "Type of Quartz"
     },
     "Rose Quartz": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Pink"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Pink"
+        ],
+        "notes": "Type of Quartz"
     },
     "Blue Quartz": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Blue"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "Type of Quartz"
     },
     "Prase": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Green"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "Type of Quartz"
     },
     "Aventurine": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Green,Blue"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Green",
+            "Blue"
+        ],
+        "notes": "Type of Quartz"
     },
     "Tiger's Eye": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.6",
-            "max": "2.65"
+            "min": 2.6,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Gold,Blue-Grey,Grey,Blue,Yellow,Orange"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Gold",
+            "Blue Grey",
+            "Grey",
+            "Blue",
+            "Yellow",
+            "Orange"
+        ],
+        "notes": "Type of Quartz"
     },
     "Staurolite": {
         "hardness": {
-            "min": "7",
-            "max": "7.5"
+            "min": 7,
+            "max": 7.5
         },
         "sg": {
-            "min": "3.65",
-            "max": "3.77"
+            "min": 3.65,
+            "max": 3.77
         },
-        "streak": "Greyish,Grey-Black",
-        "lustre": "Vitreous,Dull",
-        "colour": "Yellow-Brown,Brown,Black,Reddish Brown"
+        "streak": [
+            "Greyish",
+            "Black"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Brown",
+            "Brown",
+            "Black",
+            "Reddish Brown"
+        ],
+        "notes": "No notes"
     },
     "Boracite": {
         "hardness": {
-            "min": "7",
-            "max": "7.5"
+            "min": 7,
+            "max": 7.5
         },
         "sg": {
-            "min": "2.9",
-            "max": "3"
+            "min": 2.9,
+            "max": 3
         },
-        "streak": "White",
-        "lustre": "Vitreous,Adamantine",
-        "colour": "White,Colourless,Blue,Green,"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Adamantine"
+        ],
+        "colour": [
+            "White",
+            "Colourless",
+            "Blue",
+            "Green",
+            ""
+        ],
+        "notes": "No notes"
     },
     "Cordierite": {
         "hardness": {
-            "min": "7",
-            "max": "7"
+            "min": 7,
+            "max": 7
         },
         "sg": {
-            "min": "2.55",
-            "max": "2.75"
+            "min": 2.55,
+            "max": 2.75
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Colourless,Purple,Yellow,Grey,Greyish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Colourless",
+            "Purple",
+            "Yellow",
+            "Grey",
+            "Greyish"
+        ],
+        "notes": "No notes"
     },
     "Tourmaline": {
         "hardness": {
-            "min": "7",
-            "max": "7.5"
+            "min": 7,
+            "max": 7.5
         },
         "sg": {
-            "min": "3",
-            "max": "3.2"
+            "min": 3,
+            "max": 3.2
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Black,Brown,Red,Orange,Yellow,Green,Blue,Purple,Pink,Greenish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Black",
+            "Brown",
+            "Red",
+            "Orange",
+            "Yellow",
+            "Green",
+            "Blue",
+            "Purple",
+            "Pink",
+            "Greenish"
+        ],
+        "notes": "Very easy to identify when multicoloured"
     },
     "Zircon": {
         "hardness": {
-            "min": "7.5",
-            "max": "7.5"
+            "min": 7.5,
+            "max": 7.5
         },
         "sg": {
-            "min": "4.6",
-            "max": "4.7"
+            "min": 4.6,
+            "max": 4.7
         },
-        "streak": "White",
-        "lustre": "Adamantine",
-        "colour": "Brown,Reddish Brown,Colorless,Grey,Green,Greyish,Greenish"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Adamantine"
+        ],
+        "colour": [
+            "Brown",
+            "Reddish Brown",
+            "Colorless",
+            "Grey",
+            "Green",
+            "Greyish",
+            "Greenish"
+        ],
+        "notes": "Can fluoresce orange under UV"
     },
     "Beryl": {
         "hardness": {
-            "min": "7.5",
-            "max": "8"
+            "min": 7.5,
+            "max": 8
         },
         "sg": {
-            "min": "2.63",
-            "max": "2.9"
+            "min": 2.63,
+            "max": 2.9
         },
-        "streak": "White",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Green,Blue,Yellow,Colorless,Pink,Red"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Green",
+            "Blue",
+            "Yellow",
+            "Colorless",
+            "Pink",
+            "Red"
+        ],
+        "notes": "Green is emerald. Blue is aquamarine. Yellow is heliodore. Colourless is goshenite. Pink is morganite"
     },
     "Topaz": {
         "hardness": {
-            "min": "8",
-            "max": "8"
+            "min": 8,
+            "max": 8
         },
         "sg": {
-            "min": "3.5",
-            "max": "3.6"
+            "min": 3.5,
+            "max": 3.6
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Colourless,Yellow,Blue,Greenish,Pink,Red"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Colourless",
+            "Yellow",
+            "Blue",
+            "Greenish",
+            "Pink",
+            "Red"
+        ],
+        "notes": "Can fluoresce under UV"
     },
     "Spinel": {
         "hardness": {
-            "min": "7.5",
-            "max": "8"
+            "min": 7.5,
+            "max": 8
         },
         "sg": {
-            "min": "3.57",
-            "max": "4.4"
+            "min": 3.57,
+            "max": 4.4
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Red,Green,Blue,Purple,Brown,Black,Colourless"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Red",
+            "Green",
+            "Blue",
+            "Purple",
+            "Brown",
+            "Black",
+            "Colourless"
+        ],
+        "notes": "Often confused with rubies"
     },
     "Chrysoberyl": {
         "hardness": {
-            "min": "8.5",
-            "max": "8.5"
+            "min": 8.5,
+            "max": 8.5
         },
         "sg": {
-            "min": "3.5",
-            "max": "3.84"
+            "min": 3.5,
+            "max": 3.84
         },
-        "streak": "White",
-        "lustre": "Vitreous",
-        "colour": "Yellow,Green,Greenish,Brown,Grey,Brown,Greyish,Blue,Red"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Yellow",
+            "Green",
+            "Greenish",
+            "Brown",
+            "Grey",
+            "Brown",
+            "Greyish",
+            "Blue",
+            "Red"
+        ],
+        "notes": "Alexandrite has a significant colour change depending on the light source. Cymophanee has chatoyancy."
     },
     "Corundum": {
         "hardness": {
-            "min": "9",
-            "max": "9"
+            "min": 9,
+            "max": 9
         },
         "sg": {
-            "min": "4",
-            "max": "4.1"
+            "min": 4,
+            "max": 4.1
         },
-        "streak": "White",
-        "lustre": "Vitreous,Adamanite",
-        "colour": "Red,Blue,Brown,Black,White,Yellow,Grey"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Adamanite"
+        ],
+        "colour": [
+            "Red",
+            "Blue",
+            "Brown",
+            "Black",
+            "White",
+            "Yellow",
+            "Grey"
+        ],
+        "notes": "Red is ruby. Blue is sapphire. Black is emery."
     },
     "Diamond": {
         "hardness": {
-            "min": "10",
-            "max": "10"
+            "min": 10,
+            "max": 10
         },
         "sg": {
-            "min": "3.5",
-            "max": "3.53"
+            "min": 3.5,
+            "max": 3.53
         },
-        "streak": "White",
-        "lustre": "Adamantine,Greasy",
-        "colour": "Colourless,Yellow,Brown,Red,Grey,Blue,Black,White"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Greasy"
+        ],
+        "colour": [
+            "Colourless",
+            "Yellow",
+            "Brown",
+            "Red",
+            "Grey",
+            "Blue",
+            "Black",
+            "White"
+        ],
+        "notes": "Can fluoresce under UV"
     },
     "Orpiment": {
         "hardness": {
-            "min": "1.5",
-            "max": "2"
+            "min": 1.5,
+            "max": 2
         },
         "sg": {
-            "min": "3.49",
-            "max": "3.56"
+            "min": 3.49,
+            "max": 3.56
         },
-        "streak": "Yellow",
-        "lustre": "Resinous,Pearly",
-        "colour": "Yellow,Yellow-Brown"
+        "streak": [
+            "Yellow"
+        ],
+        "lustre": [
+            "Resinous",
+            "Pearly"
+        ],
+        "colour": [
+            "Yellow",
+            "Yellow",
+            "Brown"
+        ],
+        "notes": "Poisonous so take care."
     },
     "Realgar": {
         "hardness": {
-            "min": "1.5",
-            "max": "2"
+            "min": 1.5,
+            "max": 2
         },
         "sg": {
-            "min": "3.5",
-            "max": "3.6"
+            "min": 3.5,
+            "max": 3.6
         },
-        "streak": "Orange",
-        "lustre": "Resinous,Adamantine,Submetallic",
-        "colour": "Orange,Red,Reddish Orange"
+        "streak": [
+            "Orange"
+        ],
+        "lustre": [
+            "Resinous",
+            "Adamantine",
+            "Submetallic"
+        ],
+        "colour": [
+            "Orange",
+            "Red",
+            "Reddish Orange"
+        ],
+        "notes": "Arsenic ore. Take care."
     },
     "Autunite": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "3.1",
-            "max": "3.2"
+            "min": 3.1,
+            "max": 3.2
         },
-        "streak": "Green,Yellow",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Greenish,Yellow,Green"
+        "streak": [
+            "Green",
+            "Yellow"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Greenish",
+            "Yellow",
+            "Green"
+        ],
+        "notes": "Radioactive. Fluorescent in UV"
     },
     "Carnotite": {
         "hardness": {
-            "min": "2",
-            "max": "2"
+            "min": 2,
+            "max": 2
         },
         "sg": {
-            "min": "3.7",
-            "max": "4.7"
+            "min": 3.7,
+            "max": 4.7
         },
-        "streak": "Yellow",
-        "lustre": "Pearly,Dull",
-        "colour": "Yellow,Greenish"
+        "streak": [
+            "Yellow"
+        ],
+        "lustre": [
+            "Pearly",
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Greenish"
+        ],
+        "notes": "Very radioactive."
     },
     "Uranophane": {
         "hardness": {
-            "min": "2.5",
-            "max": "2.5"
+            "min": 2.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "3.81",
-            "max": "3.9"
+            "min": 3.81,
+            "max": 3.9
         },
-        "streak": "Yellow",
-        "lustre": "Vitreous",
-        "colour": "Yellow,Yellow-Brown,Greenish,Orange"
+        "streak": [
+            "Yellow"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Yellow",
+            "Yellow",
+            "Brown",
+            "Greenish",
+            "Orange"
+        ],
+        "notes": "Radioactve. Fluorescent in UV"
     },
     "Crocoite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "5.9",
-            "max": "6.1"
+            "min": 5.9,
+            "max": 6.1
         },
-        "streak": "Yellow-Orange",
-        "lustre": "Adamantine,Greasy",
-        "colour": "Yellow,Orange,Red,Reddish Orange"
+        "streak": [
+            "Yellow",
+            "Orange"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Greasy"
+        ],
+        "colour": [
+            "Yellow",
+            "Orange",
+            "Red",
+            "Reddish Orange"
+        ],
+        "notes": "No notes"
     },
     "Jarosite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3.5"
+            "min": 2.5,
+            "max": 3.5
         },
         "sg": {
-            "min": "2.9",
-            "max": "3.3"
+            "min": 2.9,
+            "max": 3.3
         },
-        "streak": "Yellow",
-        "lustre": "Vitreous,Resinous,Dull",
-        "colour": "Yellow,Brown,Yellow-Brown"
+        "streak": [
+            "Yellow"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous",
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Brown",
+            "Yellow",
+            "Brown"
+        ],
+        "notes": "Associated with hematite limonite variscite pyrite galena barite and turquoise"
     },
     "Pentlandite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "4.6",
-            "max": "5"
+            "min": 4.6,
+            "max": 5
         },
-        "streak": "Brown",
-        "lustre": "Metallic",
-        "colour": "Bronze,Brown,Yellow"
+        "streak": [
+            "Brown"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Bronze",
+            "Brown",
+            "Yellow"
+        ],
+        "notes": "Nickel sulphide ore"
     },
     "Sphalerite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "3.9",
-            "max": "4.2"
+            "min": 3.9,
+            "max": 4.2
         },
-        "streak": "Yellow,Yellow-Brown",
-        "lustre": "Adamantine,Resinous,Greasy",
-        "colour": "Black,Brown,Yellow,Reddish,Green,White"
+        "streak": [
+            "Yellow",
+            "Yellow Brown"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Resinous",
+            "Greasy"
+        ],
+        "colour": [
+            "Black",
+            "Brown",
+            "Yellow",
+            "Reddish",
+            "Green",
+            "White"
+        ],
+        "notes": "Hard to distinguish from wurzite or galena. The streak is a shade called buff."
     },
     "Copiapite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "2.04",
-            "max": "2.17"
+            "min": 2.04,
+            "max": 2.17
         },
-        "streak": "Yellow",
-        "lustre": "Pearly,Dull",
-        "colour": "Yellow,Greenish,Green"
+        "streak": [
+            "Yellow"
+        ],
+        "lustre": [
+            "Pearly",
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Greenish",
+            "Green"
+        ],
+        "notes": "Magnetic."
     },
     "Zincite": {
         "hardness": {
-            "min": "4",
-            "max": "4"
+            "min": 4,
+            "max": 4
         },
         "sg": {
-            "min": "5.43",
-            "max": "5.7"
+            "min": 5.43,
+            "max": 5.7
         },
-        "streak": "Yellow-Orange,Orange",
-        "lustre": "Adamantine,Resinous",
-        "colour": "Yellow,Orange,Red,Brown"
+        "streak": [
+            "Yellow",
+            "Orange",
+            "Orange"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Resinous"
+        ],
+        "colour": [
+            "Yellow",
+            "Orange",
+            "Red",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Xenotime": {
         "hardness": {
-            "min": "4",
-            "max": "5"
+            "min": 4,
+            "max": 5
         },
         "sg": {
-            "min": "4.4",
-            "max": "5.1"
+            "min": 4.4,
+            "max": 5.1
         },
-        "streak": "White,Yellow Brown,Red,Brown",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Brown,Greyish,Greenish,Red"
+        "streak": [
+            "White",
+            "Yellow Brown",
+            "Red",
+            "Brown"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Brown",
+            "Greyish",
+            "Greenish",
+            "Red"
+        ],
+        "notes": "May be radioactive."
     },
     "Uraninite": {
         "hardness": {
-            "min": "5",
-            "max": "6"
+            "min": 5,
+            "max": 6
         },
         "sg": {
-            "min": "6.5",
-            "max": "10.95"
+            "min": 6.5,
+            "max": 10.95
         },
-        "streak": "Brown,Black,Greyish,Green,Greenish",
-        "lustre": "Submetallic,Greasy,Dull",
-        "colour": "Black,Grey,Brown"
+        "streak": [
+            "Brown",
+            "Black",
+            "Greyish",
+            "Green",
+            "Greenish"
+        ],
+        "lustre": [
+            "Submetallic",
+            "Greasy",
+            "Dull"
+        ],
+        "colour": [
+            "Black",
+            "Grey",
+            "Brown"
+        ],
+        "notes": "Radioactive"
     },
     "Goethite": {
         "hardness": {
-            "min": "5",
-            "max": "5.5"
+            "min": 5,
+            "max": 5.5
         },
         "sg": {
-            "min": "3.3",
-            "max": "4.3"
+            "min": 2.9,
+            "max": 4.3
         },
-        "streak": "Yellow Brown,Brown",
-        "lustre": "Adamantine,Silky,Dull",
-        "colour": "Yellow,Red,Brown,Black,Yellow Brown"
+        "streak": [
+            "Yellow Brown",
+            "Brown"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Silky",
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Red",
+            "Brown",
+            "Black",
+            "Yellow Brown"
+        ],
+        "notes": "Minor iron ore."
     },
     "Limonite": {
         "hardness": {
-            "min": "4",
-            "max": "5.5"
+            "min": 4,
+            "max": 5.5
         },
         "sg": {
-            "min": "2.9",
-            "max": "4.3"
+            "min": 2.9,
+            "max": 4.3
         },
-        "streak": "Brown,Yellow Brown,Yellow",
-        "lustre": "Dull",
-        "colour": "Yellow,Yellow Brown,Brown"
+        "streak": [
+            "Brown",
+            "Yellow Brown",
+            "Yellow"
+        ],
+        "lustre": [
+            "Dull"
+        ],
+        "colour": [
+            "Yellow",
+            "Yellow Brown",
+            "Brown"
+        ],
+        "notes": "Minor iron ore"
     },
     "Wolframite": {
         "hardness": {
-            "min": "4",
-            "max": "5.5"
+            "min": 4,
+            "max": 5.5
         },
         "sg": {
-            "min": "7",
-            "max": "7.5"
+            "min": 7,
+            "max": 7.5
         },
-        "streak": "Brown,Red",
-        "lustre": "Submetallic,Resinous",
-        "colour": "Grey,Black,Brown"
+        "streak": [
+            "Brown",
+            "Red"
+        ],
+        "lustre": [
+            "Submetallic",
+            "Resinous"
+        ],
+        "colour": [
+            "Grey",
+            "Black",
+            "Brown"
+        ],
+        "notes": "Tungsten ore"
     },
     "Plattnerite": {
         "hardness": {
-            "min": "5",
-            "max": "5.5"
+            "min": 5,
+            "max": 5.5
         },
         "sg": {
-            "min": "8.5",
-            "max": "9.63"
+            "min": 8.5,
+            "max": 9.63
         },
-        "streak": "Brown",
-        "lustre": "Adamantine,Metallic",
-        "colour": "Black,Brown"
+        "streak": [
+            "Brown"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Metallic"
+        ],
+        "colour": [
+            "Black",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Chromite": {
         "hardness": {
-            "min": "5.5",
-            "max": "5.5"
+            "min": 5.5,
+            "max": 5.5
         },
         "sg": {
-            "min": "4.1",
-            "max": "5.1"
+            "min": 4.1,
+            "max": 5.1
         },
-        "streak": "Brown",
-        "lustre": "Resinous,Greasy,Metallic,Submetallic,Dull",
-        "colour": "Black,Brown"
+        "streak": [
+            "Brown"
+        ],
+        "lustre": [
+            "Resinous",
+            "Greasy",
+            "Metallic",
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Black",
+            "Brown"
+        ],
+        "notes": "Chromium ore"
     },
     "Hornblende": {
         "hardness": {
-            "min": "5",
-            "max": "6"
+            "min": 5,
+            "max": 6
         },
         "sg": {
-            "min": "2.9",
-            "max": "3.5"
+            "min": 2.9,
+            "max": 3.5
         },
-        "streak": "Brown,Greyish",
-        "lustre": "Vitreous,Dull",
-        "colour": "Black,Greenish,Green,Brown"
+        "streak": [
+            "Brown",
+            "Greyish"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Black",
+            "Greenish",
+            "Green",
+            "Brown"
+        ],
+        "notes": "Breaks into wedge shapes."
     },
     "Brookite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "3.9",
-            "max": "4.18"
+            "min": 3.9,
+            "max": 4.18
         },
-        "streak": "Yellow,Greyish",
-        "lustre": "Adamantine,Submetallic",
-        "colour": "Brown,Reddish Brown,Orange,Black,Greenish Black"
+        "streak": [
+            "Yellow",
+            "Greyish"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Submetallic"
+        ],
+        "colour": [
+            "Brown",
+            "Reddish Brown",
+            "Orange",
+            "Black",
+            "Greenish Black"
+        ],
+        "notes": "No notes"
     },
     "Hypersthene": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "3.4",
-            "max": "3.9"
+            "min": 3.4,
+            "max": 3.9
         },
-        "streak": "Greyish,Green",
-        "lustre": "Vitreous,Silky,Pearly",
-        "colour": "Greyish,Greenish,Brown"
+        "streak": [
+            "Greyish",
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Silky",
+            "Pearly"
+        ],
+        "colour": [
+            "Greyish",
+            "Greenish",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Columbite": {
         "hardness": {
-            "min": "6",
-            "max": "6"
+            "min": 6,
+            "max": 6
         },
         "sg": {
-            "min": "5.3",
-            "max": "7.3"
+            "min": 5.3,
+            "max": 7.3
         },
-        "streak": "Brown,Black",
-        "lustre": "Submetallic",
-        "colour": "Black,Brown"
+        "streak": [
+            "Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Brown"
+        ],
+        "notes": "Radioactive"
     },
     "Aegirine": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.5",
-            "max": "3.6"
+            "min": 3.5,
+            "max": 3.6
         },
-        "streak": "Yellow,Greyish",
-        "lustre": "Vitreous,Resinous",
-        "colour": "Green,Greenish Black"
+        "streak": [
+            "Yellow",
+            "Greyish"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Resinous"
+        ],
+        "colour": [
+            "Green",
+            "Greenish Black"
+        ],
+        "notes": "No notes"
     },
     "Rutile": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "4.2",
-            "max": "4.3"
+            "min": 4.2,
+            "max": 4.3
         },
-        "streak": "Brown,Black,Red",
-        "lustre": "Adamantine,Metallic",
-        "colour": "Red,Reddish Brown,Yellow,Blue,Purple,Green"
+        "streak": [
+            "Brown",
+            "Black",
+            "Red"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Metallic"
+        ],
+        "colour": [
+            "Red",
+            "Reddish Brown",
+            "Yellow",
+            "Blue",
+            "Purple",
+            "Green"
+        ],
+        "notes": "Titanium ore."
     },
     "Annabergite": {
         "hardness": {
-            "min": "1.5",
-            "max": "2.5"
+            "min": 1.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "3.07",
-            "max": "3.1"
+            "min": 3.07,
+            "max": 3.1
         },
-        "streak": "Green,Greyish",
-        "lustre": "Silky,Vitreous,Dull,Pearly",
-        "colour": "Green,Pink,Grey,White"
+        "streak": [
+            "Green",
+            "Greyish"
+        ],
+        "lustre": [
+            "Silky",
+            "Vitreous",
+            "Dull",
+            "Pearly"
+        ],
+        "colour": [
+            "Green",
+            "Pink",
+            "Grey",
+            "White"
+        ],
+        "notes": "No notes"
     },
     "Garnierite": {
         "hardness": {
-            "min": "2",
-            "max": "3"
+            "min": 2,
+            "max": 3
         },
         "sg": {
-            "min": "4.6",
-            "max": "4.6"
+            "min": 4.6,
+            "max": 4.6
         },
-        "streak": "Green",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "Nickel laterite ore."
     },
     "Torbernite": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "3.2",
-            "max": "3.3"
+            "min": 3.2,
+            "max": 3.3
         },
-        "streak": "Green",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "Radioactive. Poisonous."
     },
     "Kottigite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "3.3",
-            "max": "3.33"
+            "min": 3.3,
+            "max": 3.33
         },
-        "streak": "Green,Grey,White,Red",
-        "lustre": "SIlky,Dull,Vitreous",
-        "colour": "Red,White,Grey,Greyish"
+        "streak": [
+            "Green",
+            "Grey",
+            "White",
+            "Red"
+        ],
+        "lustre": [
+            "SIlky",
+            "Dull",
+            "Vitreous"
+        ],
+        "colour": [
+            "Red",
+            "White",
+            "Grey",
+            "Greyish"
+        ],
+        "notes": "No notes"
     },
     "Olivenite": {
         "hardness": {
-            "min": "3",
-            "max": "3"
+            "min": 3,
+            "max": 3
         },
         "sg": {
-            "min": "3.9",
-            "max": "4.4"
+            "min": 3.9,
+            "max": 4.4
         },
-        "streak": "Green,Brown,Yellow",
-        "lustre": "Vitreous,Greasy,Pearly,Silky",
-        "colour": "Green,Yellow Brown,Brown"
+        "streak": [
+            "Green",
+            "Brown",
+            "Yellow"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Greasy",
+            "Pearly",
+            "Silky"
+        ],
+        "colour": [
+            "Green",
+            "Yellow Brown",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Mottramite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "5.7",
-            "max": "6"
+            "min": 5.7,
+            "max": 6
         },
-        "streak": "Green",
-        "lustre": "Greasy,Resinous",
-        "colour": "Green,Black"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Greasy",
+            "Resinous"
+        ],
+        "colour": [
+            "Green",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Millerite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "5.3",
-            "max": "5.5"
+            "min": 5.3,
+            "max": 5.5
         },
-        "streak": "Greenish Black",
-        "lustre": "Metallic",
-        "colour": "Bronze,Greenish,Greyish,Grey,Yellow"
+        "streak": [
+            "Greenish Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Bronze",
+            "Greenish",
+            "Greyish",
+            "Grey",
+            "Yellow"
+        ],
+        "notes": "It has sprays of very thin needles."
     },
     "Atacamite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "3.74",
-            "max": "3.78"
+            "min": 3.74,
+            "max": 3.78
         },
-        "streak": "Green",
-        "lustre": "Adamantine,Vitreous",
-        "colour": "Green,Yellow"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Vitreous"
+        ],
+        "colour": [
+            "Green",
+            "Yellow"
+        ],
+        "notes": "No notes"
     },
     "Antlerite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "3.9",
-            "max": "3.9"
+            "min": 3.9,
+            "max": 3.9
         },
-        "streak": "Green",
-        "lustre": "Vitreous",
-        "colour": "Green,Black"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Green",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Malachite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "3.6",
-            "max": "4"
+            "min": 3.6,
+            "max": 4
         },
-        "streak": "Green",
-        "lustre": "Vitreous,Adamantine,Silky",
-        "colour": "Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Adamantine",
+            "Silky"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "Do not inhale dust."
     },
     "Libethenite": {
         "hardness": {
-            "min": "4",
-            "max": "4"
+            "min": 4,
+            "max": 4
         },
         "sg": {
-            "min": "3.6",
-            "max": "4"
+            "min": 3.6,
+            "max": 4
         },
-        "streak": "Green",
-        "lustre": "Resinous,Vitreous,Greasy",
-        "colour": "Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Resinous",
+            "Vitreous",
+            "Greasy"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "No notes"
     },
     "Cuprotungstite": {
         "hardness": {
-            "min": "4",
-            "max": "5"
+            "min": 4,
+            "max": 5
         },
         "sg": {
-            "min": "7",
-            "max": "7.1"
+            "min": 7,
+            "max": 7.1
         },
-        "streak": "Green",
-        "lustre": "Vitreous,Waxy",
-        "colour": "Green,Brown"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Waxy"
+        ],
+        "colour": [
+            "Green",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Conichalcite": {
         "hardness": {
-            "min": "4.5",
-            "max": "4.5"
+            "min": 4.5,
+            "max": 4.5
         },
         "sg": {
-            "min": "4.1",
-            "max": "4.3"
+            "min": 4.1,
+            "max": 4.3
         },
-        "streak": "Green",
-        "lustre": "Vitreous,Greasy",
-        "colour": "Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Greasy"
+        ],
+        "colour": [
+            "Green"
+        ],
+        "notes": "Often forms as a crust on other minerals"
     },
     "Hedenbergite": {
         "hardness": {
-            "min": "5",
-            "max": "6.5"
+            "min": 5,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.55",
-            "max": "3.56"
+            "min": 3.55,
+            "max": 3.56
         },
-        "streak": "White,Green,Grey",
-        "lustre": "Vitreous,Pearly,Dull",
-        "colour": "Green,Greenish,Black"
+        "streak": [
+            "White",
+            "Green",
+            "Grey"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly",
+            "Dull"
+        ],
+        "colour": [
+            "Green",
+            "Greenish",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Cyanotrichite": {
         "hardness": {
-            "min": "1",
-            "max": "3"
+            "min": 1,
+            "max": 3
         },
         "sg": {
-            "min": "2.74",
-            "max": "2.95"
+            "min": 2.74,
+            "max": 2.95
         },
-        "streak": "Blue",
-        "lustre": "Vitreous,Silky",
-        "colour": "Blue"
+        "streak": [
+            "Blue"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Silky"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "Associated with other copper minerals like malachite and smithsonite"
     },
     "Proustite": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "5.5",
-            "max": "5.6"
+            "min": 5.5,
+            "max": 5.6
         },
-        "streak": "Red",
-        "lustre": "Adamantine,Submetallic",
-        "colour": "Red"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Submetallic"
+        ],
+        "colour": [
+            "Red"
+        ],
+        "notes": "Silver ore"
     },
     "Chalcanthite": {
         "hardness": {
-            "min": "2.5",
-            "max": "2.5"
+            "min": 2.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "2.12",
-            "max": "2.3"
+            "min": 2.12,
+            "max": 2.3
         },
-        "streak": "Blue,White",
-        "lustre": "Vitreous,Silky",
-        "colour": "Blue"
+        "streak": [
+            "Blue",
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Silky"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "Poisonous"
     },
     "Linarite": {
         "hardness": {
-            "min": "2.5",
-            "max": "2.5"
+            "min": 2.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "5.3",
-            "max": "5.5"
+            "min": 5.3,
+            "max": 5.5
         },
-        "streak": "Blue",
-        "lustre": "Vitreous,Dull",
-        "colour": "Blue"
+        "streak": [
+            "Blue"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "No notes"
     },
     "Boleite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "4.8",
-            "max": "5.1"
+            "min": 4.8,
+            "max": 5.1
         },
-        "streak": "Blue,Bluish Green",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Blue,Purple"
+        "streak": [
+            "Blue",
+            "Bluish Green"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Blue",
+            "Purple"
+        ],
+        "notes": "Can be radioactive."
     },
     "Azurite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "3.77",
-            "max": "3.89"
+            "min": 3.77,
+            "max": 3.89
         },
-        "streak": "Blue",
-        "lustre": "Vitreous,Dull",
-        "colour": "Blue"
+        "streak": [
+            "Blue"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "Associated with malachite"
     },
     "Glaucophane": {
         "hardness": {
-            "min": "5",
-            "max": "6.5"
+            "min": 5,
+            "max": 6.5
         },
         "sg": {
-            "min": "3",
-            "max": "3.15"
+            "min": 3,
+            "max": 3.15
         },
-        "streak": "Greyish,Blue",
-        "lustre": "Vitreous,Pearly",
-        "colour": "Blue Grey,Blue,Greyish,Grey"
+        "streak": [
+            "Greyish",
+            "Blue"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "Blue Grey",
+            "Blue",
+            "Greyish",
+            "Grey"
+        ],
+        "notes": "Found near plate margins. Associated with chlorite epidote aragonite jadeite muscovite and garnet"
     },
     "Lazulite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "3",
-            "max": "3.3"
+            "min": 3,
+            "max": 3.3
         },
-        "streak": "Blue,White",
-        "lustre": "Vitreous,Dull",
-        "colour": "Blue"
+        "streak": [
+            "Blue",
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Blue"
+        ],
+        "notes": "No notes"
     },
     "Cinnabar": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "8.1",
-            "max": "8.2"
+            "min": 8.1,
+            "max": 8.2
         },
-        "streak": "Red",
-        "lustre": "Adamantine,Submetallic,Dull",
-        "colour": "Red,Grey"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Red",
+            "Grey"
+        ],
+        "notes": "Mercury ore. Poisonous"
     },
     "Pyrargyrite": {
         "hardness": {
-            "min": "2.5",
-            "max": "2.5"
+            "min": 2.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "5.8",
-            "max": "5.9"
+            "min": 5.8,
+            "max": 5.9
         },
-        "streak": "Red",
-        "lustre": "Adamantine,Submetallic",
-        "colour": "Red,Black"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Submetallic"
+        ],
+        "colour": [
+            "Red",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Greenockite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "4.5",
-            "max": "5"
+            "min": 4.5,
+            "max": 5
         },
-        "streak": "Red,Orange,Brown",
-        "lustre": "Adamantine,Resinous",
-        "colour": "Yellow,Orange,Red,Brown"
+        "streak": [
+            "Red",
+            "Orange",
+            "Brown"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Resinous"
+        ],
+        "colour": [
+            "Yellow",
+            "Orange",
+            "Red",
+            "Brown"
+        ],
+        "notes": "Is generally a honey colour."
     },
     "Descloizite": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "59",
-            "max": "6.2"
+            "min": 59,
+            "max": 6.2
         },
-        "streak": "Orange,Reddish Brown,Red",
-        "lustre": "Resinous,Waxy,Greasy",
-        "colour": "Red,Brown,Black,Yellow"
+        "streak": [
+            "Orange",
+            "Reddish Brown",
+            "Red"
+        ],
+        "lustre": [
+            "Resinous",
+            "Waxy",
+            "Greasy"
+        ],
+        "colour": [
+            "Red",
+            "Brown",
+            "Black",
+            "Yellow"
+        ],
+        "notes": "Associations with zinc and vanadate minerals"
     },
     "Cuprite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "6.14",
-            "max": "6.14"
+            "min": 6.14,
+            "max": 6.14
         },
-        "streak": "Red",
-        "lustre": "Adamantine,Dull,Submetallic",
-        "colour": "Red"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Dull",
+            "Submetallic"
+        ],
+        "colour": [
+            "Red"
+        ],
+        "notes": "Copper ore. Dark red mass with malachite attached is likely to be cuprite. Cinnabar is softer."
     },
     "Hematite": {
         "hardness": {
-            "min": "5",
-            "max": "6.5"
+            "min": 5,
+            "max": 6.5
         },
         "sg": {
-            "min": "5.26",
-            "max": "5.26"
+            "min": 5.26,
+            "max": 5.26
         },
-        "streak": "Red",
-        "lustre": "Metallic,Dull,Submetallic",
-        "colour": "Grey,Black,Red,Brown"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull",
+            "Submetallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black",
+            "Red",
+            "Brown"
+        ],
+        "notes": "Magnetic. Major iron ore.Grey and black as crystals and massive crystals ores. Red or brown as earthy and massive forms."
     },
     "Piemontite": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "3.46",
-            "max": "3.54"
+            "min": 3.46,
+            "max": 3.54
         },
-        "streak": "Red",
-        "lustre": "Vitreous",
-        "colour": "Red,Reddish Brown,Black"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Red",
+            "Reddish Brown",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Covellite": {
         "hardness": {
-            "min": "1.5",
-            "max": "2"
+            "min": 1.5,
+            "max": 2
         },
         "sg": {
-            "min": "4.6",
-            "max": "4.8"
+            "min": 4.6,
+            "max": 4.8
         },
-        "streak": "Greyish,Grey Black,Black",
-        "lustre": "Metallic,Submetallic.Resinous",
-        "colour": "Blue,Purple,Black"
+        "streak": [
+            "Greyish",
+            "Grey Black",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic.Resinous"
+        ],
+        "colour": [
+            "Blue",
+            "Purple",
+            "Black"
+        ],
+        "notes": "Iridescent"
     },
     "Acanthite": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "7.2",
-            "max": "7.4"
+            "min": 7.2,
+            "max": 7.4
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Chalcocite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "5.5",
-            "max": "5.8"
+            "min": 5.5,
+            "max": 5.8
         },
-        "streak": "Black,Greyish,Grey Black",
-        "lustre": "Metallic.Submetallic",
-        "colour": "Black,Grey"
+        "streak": [
+            "Black",
+            "Greyish",
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic.Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Grey"
+        ],
+        "notes": "Major copper ore."
     },
     "Tetrahedrite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "4.97",
-            "max": "4.97"
+            "min": 4.97,
+            "max": 4.97
         },
-        "streak": "Black,Brown,Red",
-        "lustre": "Metallic",
-        "colour": "Grey"
+        "streak": [
+            "Black",
+            "Brown",
+            "Red"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey"
+        ],
+        "notes": "Named for its pyramid crystals. Minor ore of silver and copper."
     },
     "Psilomelane": {
         "hardness": {
-            "min": "5",
-            "max": "6"
+            "min": 5,
+            "max": 6
         },
         "sg": {
-            "min": "3.3",
-            "max": "4.7"
+            "min": 3.3,
+            "max": 4.7
         },
-        "streak": "Brown,Black",
-        "lustre": "Submetallic,Dull",
-        "colour": "Black,Greyish"
+        "streak": [
+            "Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Black",
+            "Greyish"
+        ],
+        "notes": "Manganese ore."
     },
     "Ilmenite": {
         "hardness": {
-            "min": "5",
-            "max": "6"
+            "min": 5,
+            "max": 6
         },
         "sg": {
-            "min": "4.68",
-            "max": "4.79"
+            "min": 4.68,
+            "max": 4.79
         },
-        "streak": "Red,Brown,Reddish Brown,Black",
-        "lustre": "Metallic,Submetallic",
-        "colour": "Black"
+        "streak": [
+            "Red",
+            "Brown",
+            "Reddish Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic"
+        ],
+        "colour": [
+            "Black"
+        ],
+        "notes": "Titanium ore"
     },
     "Ilvaite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "3.8",
-            "max": "4.1"
+            "min": 3.8,
+            "max": 4.1
         },
-        "streak": "Black",
-        "lustre": "Submetallic",
-        "colour": "Black,Greyish"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Greyish"
+        ],
+        "notes": "No notes"
     },
     "Magnetite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6.5"
+            "min": 5.5,
+            "max": 6.5
         },
         "sg": {
-            "min": "5.17",
-            "max": "5.18"
+            "min": 5.17,
+            "max": 5.18
         },
-        "streak": "Black",
-        "lustre": "Metallic,Submetallic",
-        "colour": "Black,Greyish"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Greyish"
+        ],
+        "notes": "Magnetic. Major iron ore."
     },
     "Diallage": {
         "hardness": {
-            "min": "4",
-            "max": "6"
+            "min": 4,
+            "max": 6
         },
         "sg": {
-            "min": "3.2",
-            "max": "3.35"
+            "min": 3.2,
+            "max": 3.35
         },
-        "streak": "White,Black,Greyish",
-        "lustre": "Metallic",
-        "colour": "Green,Greenish,Greyish,Brown"
+        "streak": [
+            "White",
+            "Black",
+            "Greyish"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Green",
+            "Greenish",
+            "Greyish",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Thortveitite": {
         "hardness": {
-            "min": "5",
-            "max": "7"
+            "min": 5,
+            "max": 7
         },
         "sg": {
-            "min": "3.27",
-            "max": "3.8"
+            "min": 3.27,
+            "max": 3.8
         },
-        "streak": "Grey",
-        "lustre": "Vitreous,Adamantine,Dull",
-        "colour": "Brown,Greyish,Greenish"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Adamantine",
+            "Dull"
+        ],
+        "colour": [
+            "Brown",
+            "Greyish",
+            "Greenish"
+        ],
+        "notes": "Scandium ore. Associated with rare earth minerals in granite peegmatites."
     },
     "Gold": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "15",
-            "max": "19.3"
+            "min": 15,
+            "max": 19.3
         },
-        "streak": "Gold",
-        "lustre": "Metallic",
-        "colour": "Gold"
+        "streak": [
+            "Gold"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Gold"
+        ],
+        "notes": "No notes"
     },
     "Baumhauerite": {
         "hardness": {
-            "min": "3",
-            "max": "3"
+            "min": 3,
+            "max": 3
         },
         "sg": {
-            "min": "5.33",
-            "max": "5.44"
+            "min": 5.33,
+            "max": 5.44
         },
-        "streak": "Brown",
-        "lustre": "Metallic,Dull",
-        "colour": "Grey Black,Black,Blue Grey"
+        "streak": [
+            "Brown"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull"
+        ],
+        "colour": [
+            "Grey Black",
+            "Black",
+            "Blue Grey"
+        ],
+        "notes": "Found in dolomite marble."
     },
     "Nickeline": {
         "hardness": {
-            "min": "5",
-            "max": "5.5"
+            "min": 5,
+            "max": 5.5
         },
         "sg": {
-            "min": "7.77",
-            "max": "7.8"
+            "min": 7.77,
+            "max": 7.8
         },
-        "streak": "Brown,Black",
-        "lustre": "Metallic",
-        "colour": "Red,Orange"
+        "streak": [
+            "Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Red",
+            "Orange"
+        ],
+        "notes": "Nickel sulphide ore."
     },
     "Chloanthite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "6.5",
-            "max": "6.5"
+            "min": 6.5,
+            "max": 6.5
         },
-        "streak": "Black,Yellow",
-        "lustre": "Metallic",
-        "colour": "White,Grey"
+        "streak": [
+            "Black",
+            "Yellow"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Grey"
+        ],
+        "notes": "Nickel sulphide ore."
     },
     "Chalcopyrite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "4.1",
-            "max": "4.3"
+            "min": 4.1,
+            "max": 4.3
         },
-        "streak": "Green,Greenish Black",
-        "lustre": "Metallic",
-        "colour": "Yellow,Purple"
+        "streak": [
+            "Green",
+            "Greenish Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Yellow",
+            "Purple"
+        ],
+        "notes": "No notes"
     },
     "Copper": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "8.94",
-            "max": "8.95"
+            "min": 8.94,
+            "max": 8.95
         },
-        "streak": "Red",
-        "lustre": "Metallic",
-        "colour": "Red,Orange,Brown,Black,Green"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Red",
+            "Orange",
+            "Brown",
+            "Black",
+            "Green"
+        ],
+        "notes": "No notes"
     },
     "Graphite": {
         "hardness": {
-            "min": "1",
-            "max": "2"
+            "min": 1,
+            "max": 2
         },
         "sg": {
-            "min": "2.09",
-            "max": "2.23"
+            "min": 2.09,
+            "max": 2.23
         },
-        "streak": "Black,Grey Black,Brown",
-        "lustre": "Metallic,Dull,Submetallic",
-        "colour": "Black,Grey,Grey Black"
+        "streak": [
+            "Black",
+            "Grey Black",
+            "Brown"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull",
+            "Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Grey",
+            "Grey Black"
+        ],
+        "notes": "It's pencil led."
     },
     "Molybdenite": {
         "hardness": {
-            "min": "1",
-            "max": "1.5"
+            "min": 1,
+            "max": 1.5
         },
         "sg": {
-            "min": "4.62",
-            "max": "4.73"
+            "min": 4.62,
+            "max": 4.73
         },
-        "streak": "Greenish,Greyish,Grey",
-        "lustre": "Metallic",
-        "colour": "Black,Grey,Grey Black"
+        "streak": [
+            "Greenish",
+            "Greyish",
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Black",
+            "Grey",
+            "Grey Black"
+        ],
+        "notes": "Molybdenum ore."
     },
     "Stibnite": {
         "hardness": {
-            "min": "2",
-            "max": "2"
+            "min": 2,
+            "max": 2
         },
         "sg": {
-            "min": "4.5",
-            "max": "4.63"
+            "min": 4.5,
+            "max": 4.63
         },
-        "streak": "Greyish,Grey Black",
-        "lustre": "Metallic",
-        "colour": "Grey"
+        "streak": [
+            "Greyish",
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey"
+        ],
+        "notes": "No notes"
     },
     "Jamesonite": {
         "hardness": {
-            "min": "2",
-            "max": "3"
+            "min": 2,
+            "max": 3
         },
         "sg": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
-        "streak": "Grey Black,Black",
-        "lustre": "Metallic,Silky",
-        "colour": "Grey,Black"
+        "streak": [
+            "Grey Black",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Silky"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Pyrolusite": {
         "hardness": {
-            "min": "2",
-            "max": "6.5"
+            "min": 2,
+            "max": 6.5
         },
         "sg": {
-            "min": "4.4",
-            "max": "5.06"
+            "min": 4.4,
+            "max": 5.06
         },
-        "streak": "Black",
-        "lustre": "Metallic,Dull",
-        "colour": "Black,Grey,Blue Grey"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull"
+        ],
+        "colour": [
+            "Black",
+            "Grey",
+            "Blue Grey"
+        ],
+        "notes": "Manganese ore."
     },
     "Cylindrite": {
         "hardness": {
-            "min": "2.5",
-            "max": "2.5"
+            "min": 2.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "5.4",
-            "max": "5.5"
+            "min": 5.4,
+            "max": 5.5
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Digenite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "5.5",
-            "max": "5.7"
+            "min": 5.5,
+            "max": 5.7
         },
-        "streak": "Black",
-        "lustre": "Submetallic,Metallic",
-        "colour": "Blue,Black,Grey,Blue Grey"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Submetallic",
+            "Metallic"
+        ],
+        "colour": [
+            "Blue",
+            "Black",
+            "Grey",
+            "Blue Grey"
+        ],
+        "notes": "Copper ore"
     },
     "Galena": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "7.2",
-            "max": "7.6"
+            "min": 7.2,
+            "max": 7.6
         },
-        "streak": "Grey",
-        "lustre": "Metallic,Dull,Submetallic",
-        "colour": "Grey"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull",
+            "Submetallic"
+        ],
+        "colour": [
+            "Grey"
+        ],
+        "notes": "Major lead ore"
     },
     "Altaite": {
         "hardness": {
-            "min": "2",
-            "max": "3"
+            "min": 2,
+            "max": 3
         },
         "sg": {
-            "min": "8.19",
-            "max": "8.3"
+            "min": 8.19,
+            "max": 8.3
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "White,Yellow"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Yellow"
+        ],
+        "notes": "No notes"
     },
     "Bornite": {
         "hardness": {
-            "min": "3",
-            "max": "3"
+            "min": 3,
+            "max": 3
         },
         "sg": {
-            "min": "4.9",
-            "max": "5.3"
+            "min": 4.9,
+            "max": 5.3
         },
-        "streak": "Grey Black",
-        "lustre": "Metallic",
-        "colour": "Red,Bronze,Purple"
+        "streak": [
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Red",
+            "Bronze",
+            "Purple"
+        ],
+        "notes": "Try scratching the surface to see the coppery shades."
     },
     "Bournonite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "5.7",
-            "max": "5.9"
+            "min": 5.7,
+            "max": 5.9
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "Poisonous."
     },
     "Enargite": {
         "hardness": {
-            "min": "3",
-            "max": "3"
+            "min": 3,
+            "max": 3
         },
         "sg": {
-            "min": "4.4",
-            "max": "4.5"
+            "min": 4.4,
+            "max": 4.5
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Stannite": {
         "hardness": {
-            "min": "4",
-            "max": "4"
+            "min": 4,
+            "max": 4
         },
         "sg": {
-            "min": "4.3",
-            "max": "4.5"
+            "min": 4.3,
+            "max": 4.5
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Black,Blue"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black",
+            "Blue"
+        ],
+        "notes": "Tin ore."
     },
     "Manganite": {
         "hardness": {
-            "min": "4",
-            "max": "4"
+            "min": 4,
+            "max": 4
         },
         "sg": {
-            "min": "4.29",
-            "max": "4.34"
+            "min": 4.29,
+            "max": 4.34
         },
-        "streak": "Brown,Black",
-        "lustre": "Resinous,Submetallic,Dull",
-        "colour": "Grey,Black"
+        "streak": [
+            "Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Resinous",
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "Manganese ore."
     },
     "Pyrrhotite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4.5"
+            "min": 3.5,
+            "max": 4.5
         },
         "sg": {
-            "min": "4.58",
-            "max": "4.65"
+            "min": 4.58,
+            "max": 4.65
         },
-        "streak": "Grey,Black,Grey Black",
-        "lustre": "Metallic",
-        "colour": "Bronze,Brown"
+        "streak": [
+            "Grey",
+            "Black",
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Bronze",
+            "Brown"
+        ],
+        "notes": "Magnetic"
     },
     "Carrollite": {
         "hardness": {
-            "min": "4.5",
-            "max": "5.5"
+            "min": 4.5,
+            "max": 5.5
         },
         "sg": {
-            "min": "4.5",
-            "max": "4.8"
+            "min": 4.5,
+            "max": 4.8
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "Grey,Red"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "Red"
+        ],
+        "notes": "No notes"
     },
     "Safflorite": {
         "hardness": {
-            "min": "4.5",
-            "max": "5.5"
+            "min": 4.5,
+            "max": 5.5
         },
         "sg": {
-            "min": "6.9",
-            "max": "7.3"
+            "min": 6.9,
+            "max": 7.3
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "White,Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Lollingite": {
         "hardness": {
-            "min": "5",
-            "max": "5.5"
+            "min": 5,
+            "max": 5.5
         },
         "sg": {
-            "min": "7.1",
-            "max": "7.5"
+            "min": 7.1,
+            "max": 7.5
         },
-        "streak": "Grey Black",
-        "lustre": "Metallic",
-        "colour": "White,Grey"
+        "streak": [
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Grey"
+        ],
+        "notes": "No notes"
     },
     "Cobaltite": {
         "hardness": {
-            "min": "5.5",
-            "max": "5.5"
+            "min": 5.5,
+            "max": 5.5
         },
         "sg": {
-            "min": "6",
-            "max": "6.33"
+            "min": 6,
+            "max": 6.33
         },
-        "streak": "Grey Black,Black,Grey",
-        "lustre": "Metallic",
-        "colour": "White,Red"
+        "streak": [
+            "Grey Black",
+            "Black",
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Red"
+        ],
+        "notes": "Cobalt ore."
     },
     "Arsenopyrite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "5.9",
-            "max": "6.2"
+            "min": 5.9,
+            "max": 6.2
         },
-        "streak": "Grey,Grey Black,Black",
-        "lustre": "Metallic,Submetallic",
-        "colour": "White,Grey,Brown,Pink"
+        "streak": [
+            "Grey",
+            "Grey Black",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic"
+        ],
+        "colour": [
+            "White",
+            "Grey",
+            "Brown",
+            "Pink"
+        ],
+        "notes": "Weakly magnetic"
     },
     "Skutterudite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "6.5",
-            "max": "6.5"
+            "min": 6.5,
+            "max": 6.5
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "White,Grey"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Grey"
+        ],
+        "notes": "No notes"
     },
     "Rammelsbergite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "7",
-            "max": "7.3"
+            "min": 7,
+            "max": 7.3
         },
-        "streak": "Grey,Grey Black",
-        "lustre": "Metallic",
-        "colour": "White,Pink"
+        "streak": [
+            "Grey",
+            "Grey Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White",
+            "Pink"
+        ],
+        "notes": "No notes"
     },
     "Franklinite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6.5"
+            "min": 5.5,
+            "max": 6.5
         },
         "sg": {
-            "min": "5.07",
-            "max": "5.22"
+            "min": 5.07,
+            "max": 5.22
         },
-        "streak": "Reddish Brown,Black",
-        "lustre": "Metallic,Submetallic,Dull",
-        "colour": "Black"
+        "streak": [
+            "Reddish Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Black"
+        ],
+        "notes": "Weakly magnetic."
     },
     "Pyrite": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "4.8",
-            "max": "5.1"
+            "min": 4.8,
+            "max": 5.1
         },
-        "streak": "Greenish Black,Brown,Black",
-        "lustre": "Metallic",
-        "colour": "Gold,Yellow"
+        "streak": [
+            "Greenish Black",
+            "Brown",
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Gold",
+            "Yellow"
+        ],
+        "notes": "Not gold."
     },
     "Iridosmine": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "19",
-            "max": "21"
+            "min": 19,
+            "max": 21
         },
-        "streak": "Grey",
-        "lustre": "Metallic",
-        "colour": "Grey"
+        "streak": [
+            "Greyish"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey"
+        ],
+        "notes": "Osmium ore."
     },
     "Sperrylite": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "10.58",
-            "max": "10.6"
+            "min": 10.58,
+            "max": 10.6
         },
-        "streak": "Black",
-        "lustre": "Metallic",
-        "colour": "White"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "White"
+        ],
+        "notes": "Platinum ore."
     },
     "Chalcedony": {
         "hardness": {
-            "min": "6",
-            "max": "7"
+            "min": 6,
+            "max": 7
         },
         "sg": {
-            "min": "2.59",
-            "max": "2.65"
+            "min": 2.59,
+            "max": 2.65
         },
-        "streak": "White",
-        "lustre": "Waxy,Vitreous,Dull,Greasy,Silky",
-        "colour": "Blue,Grey,Yellow,Red,Brown,Green,Grey,Black,White"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Waxy",
+            "Vitreous",
+            "Dull",
+            "Greasy",
+            "Silky"
+        ],
+        "colour": [
+            "Blue",
+            "Grey",
+            "Yellow",
+            "Red",
+            "Brown",
+            "Green",
+            "Grey",
+            "Black",
+            "White"
+        ],
+        "notes": "Carnelian as yellow and red. Sardonyx as brown. Chrysoprase as apple green. Agate with bands.Onyx with grey black and white. Jasper is multicoloured. Plasma as leek green. Heliotrope is green with red flecks. Flint is usually black."
     },
     "Silver": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "10.1",
-            "max": "12"
+            "min": 10.1,
+            "max": 12
         },
-        "streak": "White,Grey",
-        "lustre": "Metallic,Dull",
-        "colour": "White,Grey,Black"
+        "streak": [
+            "White",
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull"
+        ],
+        "colour": [
+            "White",
+            "Grey",
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Platinum": {
         "hardness": {
-            "min": "4",
-            "max": "4.5"
+            "min": 4,
+            "max": 4.5
         },
         "sg": {
-            "min": "14",
-            "max": "19"
+            "min": 14,
+            "max": 19
         },
-        "streak": "Grey",
-        "lustre": "Metallic",
-        "colour": "Grey"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey"
+        ],
+        "notes": "No notes"
     },
     "Antimony": {
         "hardness": {
-            "min": "3",
-            "max": "3.5"
+            "min": 3,
+            "max": 3.5
         },
         "sg": {
-            "min": "6.6",
-            "max": "6.71"
+            "min": 6.6,
+            "max": 6.71
         },
-        "streak": "Grey,White,Greyish",
-        "lustre": "Metallic,Dull",
-        "colour": "Grey,White"
+        "streak": [
+            "Grey",
+            "White",
+            "Greyish"
+        ],
+        "lustre": [
+            "Metallic",
+            "Dull"
+        ],
+        "colour": [
+            "Grey",
+            "White"
+        ],
+        "notes": "Poisonous"
     },
     "Bismuth": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "9.7",
-            "max": "9.83"
+            "min": 9.7,
+            "max": 9.83
         },
-        "streak": "Greenish Black",
-        "lustre": "Metallic",
-        "colour": "Red,White,Grey,Pink,Yellow,Bllue"
+        "streak": [
+            "Greenish Black"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Red",
+            "White",
+            "Grey",
+            "Pink",
+            "Yellow",
+            "Bllue"
+        ],
+        "notes": "No notes"
     },
     "Arsenic": {
         "hardness": {
-            "min": "3",
-            "max": "4"
+            "min": 3,
+            "max": 4
         },
         "sg": {
-            "min": "5.4",
-            "max": "5.9"
+            "min": 5.4,
+            "max": 5.9
         },
-        "streak": "Black",
-        "lustre": "Metallic,Submetallic,Dull",
-        "colour": "Grey,Black"
+        "streak": [
+            "Black"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic",
+            "Dull"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "Poisonous"
     },
     "Chaoite": {
         "hardness": {
-            "min": "1",
-            "max": "2"
+            "min": 1,
+            "max": 2
         },
         "sg": {
-            "min": "3.3",
-            "max": "3.43"
+            "min": 3.3,
+            "max": 3.43
         },
-        "streak": "Grey",
-        "lustre": "Submetallic",
-        "colour": "Grey,Black"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Submetallic"
+        ],
+        "colour": [
+            "Grey",
+            "Black"
+        ],
+        "notes": "Very very rarely identified as it forms only in meteor impacts."
     },
     "Alabandite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "3.95",
-            "max": "4.06"
+            "min": 3.95,
+            "max": 4.06
         },
-        "streak": "Green",
-        "lustre": "Submetallic",
-        "colour": "Black,Brown,Greyish,Green"
+        "streak": [
+            "Green"
+        ],
+        "lustre": [
+            "Submetallic"
+        ],
+        "colour": [
+            "Black",
+            "Brown",
+            "Greyish",
+            "Green"
+        ],
+        "notes": "No notes"
     },
     "Marcasite": {
         "hardness": {
-            "min": "6",
-            "max": "6.5"
+            "min": 6,
+            "max": 6.5
         },
         "sg": {
-            "min": "4.875",
-            "max": "4.887"
+            "min": 4.875,
+            "max": 4.887
         },
-        "streak": "Green,Brown",
-        "lustre": "Metallic,Submetallic",
-        "colour": "Yellow,Greenish,White"
+        "streak": [
+            "Green",
+            "Brown"
+        ],
+        "lustre": [
+            "Metallic",
+            "Submetallic"
+        ],
+        "colour": [
+            "Yellow",
+            "Greenish",
+            "White"
+        ],
+        "notes": "No notes"
     },
     "Tellurobismuthite": {
         "hardness": {
-            "min": "1.5",
-            "max": "2"
+            "min": 1.5,
+            "max": 2
         },
         "sg": {
-            "min": "7.815",
-            "max": "7.815"
+            "min": 7.815,
+            "max": 7.815
         },
-        "streak": "Grey",
-        "lustre": "Metallic",
-        "colour": "Grey,White"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "White"
+        ],
+        "notes": "No notes"
     },
     "Brucite": {
         "hardness": {
-            "min": "2",
-            "max": "3"
+            "min": 2,
+            "max": 3
         },
         "sg": {
-            "min": "2.39",
-            "max": "2.4"
+            "min": 2.39,
+            "max": 2.4
         },
-        "streak": "White",
-        "lustre": "Vitreous,Waxy,Pearly",
-        "colour": "White,Greenish,Green,Blue,Grey,Colourless"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Waxy",
+            "Pearly"
+        ],
+        "colour": [
+            "White",
+            "Greenish",
+            "Green",
+            "Blue",
+            "Grey",
+            "Colourless"
+        ],
+        "notes": "No notes"
     },
     "Purpurite - Heterosite": {
         "hardness": {
-            "min": "4",
-            "max": "5"
+            "min": 4,
+            "max": 5
         },
         "sg": {
-            "min": "3.2",
-            "max": "3.4"
+            "min": 3.2,
+            "max": 3.4
         },
-        "streak": "Red,Purple",
-        "lustre": "Vitreous,Dull",
-        "colour": "Purple,Brown,Red"
+        "streak": [
+            "Red",
+            "Purple"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Dull"
+        ],
+        "colour": [
+            "Purple",
+            "Brown",
+            "Red"
+        ],
+        "notes": "No notes"
     },
     "Erythrite": {
         "hardness": {
-            "min": "1.5",
-            "max": "2.5"
+            "min": 1.5,
+            "max": 2.5
         },
         "sg": {
-            "min": "3.06",
-            "max": "3.06"
+            "min": 3.06,
+            "max": 3.06
         },
-        "streak": "Red",
-        "lustre": "Vitreous,Waxy,Pearly,Dull",
-        "colour": "Red,Pink"
+        "streak": [
+            "Red"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Waxy",
+            "Pearly",
+            "Dull"
+        ],
+        "colour": [
+            "Red",
+            "Pink"
+        ],
+        "notes": "No notes"
     },
     "Anthophyllite": {
         "hardness": {
-            "min": "5.5",
-            "max": "6"
+            "min": 5.5,
+            "max": 6
         },
         "sg": {
-            "min": "2.85",
-            "max": "3.57"
+            "min": 2.85,
+            "max": 3.57
         },
-        "streak": "Grey,Green,Greenish,Brown",
-        "lustre": "Vitreous,Silky,Pearly",
-        "colour": "Brown,Grey,White"
+        "streak": [
+            "Grey",
+            "Green",
+            "Greenish",
+            "Brown"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Silky",
+            "Pearly"
+        ],
+        "colour": [
+            "Brown",
+            "Grey",
+            "White"
+        ],
+        "notes": "No notes"
     },
     "Amber": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "1.1",
-            "max": "1.1"
+            "min": 1.1,
+            "max": 1.1
         },
-        "streak": "White",
-        "lustre": "Resinous",
-        "colour": "Yellow,Brown"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Resinous"
+        ],
+        "colour": [
+            "Yellow",
+            "Brown"
+        ],
+        "notes": "No notes"
     },
     "Jet": {
         "hardness": {
-            "min": "2",
-            "max": "4"
+            "min": 2,
+            "max": 4
         },
         "sg": {
-            "min": "1.1",
-            "max": "1.4"
+            "min": 1.1,
+            "max": 1.4
         },
-        "streak": "Brown",
-        "lustre": "Vitreous",
-        "colour": "Black"
+        "streak": [
+            "Brown"
+        ],
+        "lustre": [
+            "Vitreous"
+        ],
+        "colour": [
+            "Black"
+        ],
+        "notes": "No notes"
     },
     "Pearl": {
         "hardness": {
-            "min": "2.5",
-            "max": "4.5"
+            "min": 2.5,
+            "max": 4.5
         },
         "sg": {
-            "min": "2.6",
-            "max": "3"
+            "min": 2.6,
+            "max": 3
         },
-        "streak": "White",
-        "lustre": "Pearly",
-        "colour": "White"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Pearly"
+        ],
+        "colour": [
+            "White"
+        ],
+        "notes": "No notes"
     },
     "Whewellite": {
         "hardness": {
-            "min": "2.5",
-            "max": "3"
+            "min": 2.5,
+            "max": 3
         },
         "sg": {
-            "min": "2.21",
-            "max": "2.23"
+            "min": 2.21,
+            "max": 2.23
         },
-        "streak": "White",
-        "lustre": "Vitreous,Pearly",
-        "colour": "White,Yellow,Brown,Colurless,"
+        "streak": [
+            "White"
+        ],
+        "lustre": [
+            "Vitreous",
+            "Pearly"
+        ],
+        "colour": [
+            "White",
+            "Yellow",
+            "Brown",
+            "Colurless",
+            ""
+        ],
+        "notes": "No notes"
     },
     "Powellite": {
         "hardness": {
-            "min": "3.5",
-            "max": "4"
+            "min": 3.5,
+            "max": 4
         },
         "sg": {
-            "min": "4.25",
-            "max": "4.26"
+            "min": 4.25,
+            "max": 4.26
         },
-        "streak": "White,Yellow",
-        "lustre": "Adamantine,Greasy,Resinous,Pearly",
-        "colour": "White,Yellow,Brown,Blue,Black"
+        "streak": [
+            "White",
+            "Yellow"
+        ],
+        "lustre": [
+            "Adamantine",
+            "Greasy",
+            "Resinous",
+            "Pearly"
+        ],
+        "colour": [
+            "White",
+            "Yellow",
+            "Brown",
+            "Blue",
+            "Black"
+        ],
+        "notes": "Molybdenum ore."
     },
     "Bismuthinite": {
         "hardness": {
-            "min": "2",
-            "max": "2.5"
+            "min": 2,
+            "max": 2.5
         },
         "sg": {
-            "min": "6.8",
-            "max": "7.2"
+            "min": 6.8,
+            "max": 7.2
         },
-        "streak": "Grey",
-        "lustre": "Metallic",
-        "colour": "Grey,White"
+        "streak": [
+            "Grey"
+        ],
+        "lustre": [
+            "Metallic"
+        ],
+        "colour": [
+            "Grey",
+            "White"
+        ],
+        "notes": "Bismuth ore."
     }
 }
 var rocks = {
     "Basalt":{
         "type":["Igneous"],
-        "grain size":["I don\'t know","Aphantic","Tachylytic"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Dense"],
         "colour":["Black","Blackish Grey","Reddish","Greenish"],
         "foliated":["No"],
-        "glassScratch":["Yes"]
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Quartz Porphyry":{
+        "type":["Igneous"],
+        "grain size":["Mixed"],
+        "texture":["Phenocrysts"],
+        "colour":["Red","Brown","Greenish"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Dacite":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Phenocrysts"],
+        "colour":["Reddish","Greenish"],
+        "foliated":["No"],
+        "glassScratch":["No"],
+        "vinegarReaction":["No"]
+    },
+    "Andesite":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Porphyritic"],
+        "colour":["Black","Grey","Purplish","Brown","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Rhyolite":{
+        "type":["Igneous"],
+        "texture":["Phenocrysts","Flow-banding"],
+        "grain size":["Aphantic"],
+        "colour":["Reddish Brown","Pinkish","White","Grey","Greenish"],
+        "foliated":["Yes","No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
     },
     "Obsidian":{
         "type":["Igneous"],
-        "grain size":["I don\'t know","Vitreous"],
+        "texture":["Smooth","Phenocrysts","Microlites"],
+        "grain size":["Glassy"],
         "colour":["Black","Brownish","Reddish"],
         "foliated":["No"],
-        "glassScratch":["Yes"]
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
     }
 }

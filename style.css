@@ -12,16 +12,16 @@ header {
     text-align: center;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 h3 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 .tab {
     text-align: center;
@@ -104,6 +104,6 @@ html {
   }
 @media (max-width:32em), print {
     nav {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }

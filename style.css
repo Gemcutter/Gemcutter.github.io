@@ -71,7 +71,7 @@ main {
     margin-left: 2%;
     margin-top: 2%;
     background-color: #ECDEDC;
-    min-height: 60%;
+    min-height: 70%;
     padding: 3%;
     position: relative;
     box-shadow: 0px 0px 5px 2px #3f3f3f;
@@ -86,8 +86,6 @@ table {
 }
 footer {
     padding: 1rem;
-    position: relative;
-    bottom: 0;
     width: calc(100% - 2rem);
     background-color: #645E5D;
 }
@@ -101,5 +99,15 @@ html {
 @media (max-width:32em), print {
     nav {
         font-size: 1.2rem;
+    }
+    .tab {
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tab h3 {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

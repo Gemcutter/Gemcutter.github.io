@@ -6222,7 +6222,7 @@ var minerals = {
 var rocks = {
     "Basalt":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Dense"],
         "colour":["Black","Blackish Grey","Reddish","Greenish"],
         "foliated":["No"],
@@ -6231,8 +6231,8 @@ var rocks = {
     },
     "Quartz Porphyry":{
         "type":["Igneous"],
-        "grain size":["Mixed"],
-        "texture":["Phenocrysts"],
+        "grain size":["Fine Grained","Glassy","Aphanitic"],
+        "texture":["Porphyritic"],
         "colour":["Red","Brown","Greenish"],
         "foliated":["No"],
         "glassScratch":["Yes"],
@@ -6240,8 +6240,8 @@ var rocks = {
     },
     "Dacite":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
-        "texture":["Phenocrysts"],
+        "grain size":["Aphanitic","Glassy"],
+        "texture":["Porphyritic","Flow-banding"],
         "colour":["Reddish","Greenish"],
         "foliated":["No"],
         "glassScratch":["No"],
@@ -6249,7 +6249,7 @@ var rocks = {
     },
     "Andesite":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Porphyritic"],
         "colour":["Black","Grey","Purplish","Brown","Green"],
         "foliated":["No"],
@@ -6267,7 +6267,7 @@ var rocks = {
     },
     "Pyroxene Andesite":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Porphyritic"],
         "colour":["Black","Grey","Green"],
         "foliated":["No"],
@@ -6276,7 +6276,7 @@ var rocks = {
     },
     "Trachyte":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Porphyritic"],
         "colour":["Black","Grey","Purplish","Brown","Green"],
         "foliated":["No"],
@@ -6285,7 +6285,7 @@ var rocks = {
     },
     "Phonolite":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Dense","Porphyritic"],
         "colour":["Grey","Green"],
         "foliated":["No"],
@@ -6294,7 +6294,7 @@ var rocks = {
     },
     "Spillite":{
         "type":["Igneous"],
-        "grain size":["Aphantic","Glassy"],
+        "grain size":["Aphanitic","Glassy"],
         "texture":["Dense","Porphyritic"],
         "colour":["Grey","Green"],
         "foliated":["No"],
@@ -6312,7 +6312,7 @@ var rocks = {
     },
     "Pitchstone":{
         "type":["Igneous"],
-        "grain size":["Glassy","Cryptocrystalline"],
+        "grain size":["Glassy","Aphanitic"],
         "texture":["Smooth","Dense","Porphyritic"],
         "colour":["Grey","Green"],
         "foliated":["No"],
@@ -6321,8 +6321,8 @@ var rocks = {
     },
     "Rhyolite":{
         "type":["Igneous"],
-        "texture":["Phenocrysts","Flow-banding"],
-        "grain size":["Aphantic"],
+        "texture":["Porphyritic","Flow-banding"],
+        "grain size":["Aphanitic"],
         "colour":["Reddish Brown","Pinkish","White","Grey","Greenish"],
         "foliated":["Yes","No"],
         "glassScratch":["Yes"],
@@ -6330,7 +6330,7 @@ var rocks = {
     },
     "Obsidian":{
         "type":["Igneous"],
-        "texture":["Smooth","Phenocrysts","Microlites"],
+        "texture":["Smooth","Porphyritic","Microlites"],
         "grain size":["Glassy"],
         "colour":["Black","Brownish","Reddish"],
         "foliated":["No"],

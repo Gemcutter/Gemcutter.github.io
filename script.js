@@ -11,7 +11,13 @@ $(document).ready(function(){
         document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
     });
     $("#rockIdTab").click(function(){
-        document.getElementById("rockIdentifier").style.display = 'flex';
+        var w = window.innerWidth;
+        if (w>512) {
+            document.getElementById("rockIdentifier").style.display = 'flex';
+        }
+        else {
+            document.getElementById("rockIdentifier").style.display = 'grid';
+        }
         document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
         document.getElementById("mineralIdentifier").style.display = 'none';
         document.getElementById("home").style.display = 'none';
@@ -236,13 +242,19 @@ function search() {
     }
 }
 let questions = {
-    "type":"Is the rock igneous, metamorphic or sedimentary?",
-    "grain size":"How would you describe the grain size?",
-    "colour":"What colour is the rock?",
-    "foliated":"Does the rock have obvious layers, bands or stripes?",
-    "vinegarReaction":"Does the rock react to vinegar when powdered?",
-    "texture":"How would you best describe the texture of the rock?",
-    "glassScratch":"Does the rock scratch glass?"
+    "type":{"q":"Is the rock igneous, metamorphic or sedimentary?","def":"Igneous: Often look to have larger crystals mixed in with their grains or are quite smooth. Often somewhat porous with bubbles throughout.<br><br>Metamorphic rocks are often foliated with layers, bands or stripes, but not always. Don't generally have larger crystals mixed in with their mass.<br><br>Sedimentary: Rocks composed of other rocks that have fused together, they may be obvious like sandstone or too small to see like chert. They normally have consistent grain sizes."},
+    "grain size":{
+        "q":"How would you describe the grain size?",
+        "def":"Grain size: The size of the grains of the main mass of the rock rather than any larger crystals also in it.<br><br>Aphanitic: So small that the grains cannot be seen by the naked eye.<br><br>Glassy: Not composed of crystals, often quite reflective. Things like obsidian are glassy.<br><br>Fine Grained: The main mass of the rock is made of grains of less than 1mm.<br>"
+    },
+    "colour":{"q":"What colour is the rock?","def":""},
+    "foliated":{"q":"Does the rock have obvious layers, bands or stripes?","def":""},
+    "vinegarReaction":{"q":"Does the rock react to vinegar when powdered?","def":""},
+    "texture":{
+        "q":"How would you best describe the texture of the rock?",
+        "def":"Dense: Actually refers to the density of the rock.<br><br>Flow-banding: A type of foliation caused by layers of lava flowing on top of one another.<br><br>Microlites: Crystals sized between 0.01mm and 1mm, visible to the naked eye.<br><br>Porphyritic: Has phenocrysts. A phenocryst is a relatively large and usually conspicuous crystal distinctly larger than the grains of the rock groundmass of a rock.<br><br>Smooth: No obvious textures, the rock itself has a consistent grain size throughout."
+    },
+    "glassScratch":{"q":"Does the rock scratch glass?","def":""}
 }
 
 let steps = {};
@@ -356,7 +368,8 @@ function decisionTree() {
         document.getElementById("input").style.visibility = "visible";
         document.getElementById("submit").value = "Submit";
         if (questions[bestData]!=null) {
-            document.getElementById("question").innerText = questions[bestData];
+            document.getElementById("question").innerText = questions[bestData].q;
+            document.getElementById("def").innerHTML = questions[bestData].def;
             prevAttribute = bestData;
             document.getElementById("input").innerHTML = '';
             for (let i in attributeValues) {

@@ -267,7 +267,6 @@ function decisionTree() {
     let attributeInversions = {};
     let attributeValues = [];
     if (document.getElementById('input').value!="") {
-        console.log($('#input').val())
         steps[prevAttribute] = ""+document.getElementById('input').value;
     }
     if (isEmpty(steps)) {
@@ -276,9 +275,7 @@ function decisionTree() {
     else {
         possibleRocks = {};
         for (let i in steps) {
-            console.log('steps')
             for (let j in rocks) {
-                console.log("rocks")
                 let exists = false;
                 for (let k in rocks[j][i]) {
                     if (rocks[j][i][k] == steps[i]) {
@@ -306,7 +303,6 @@ function decisionTree() {
             possibleRocks[i] = rocks[i];
         }
     }
-    console.log(possibleRocks)
     for (let i in possibleRocks) {
         rockCount++;
         for (let attribute in possibleRocks[i]) {
@@ -348,7 +344,6 @@ function decisionTree() {
                 isValid = false;
             }
         }
-        console.log(isValid)
         if (isValid) {
             if (bestData=="") {
                 bestData = i;
@@ -409,11 +404,6 @@ function decisionTree() {
             document.getElementById("input").style.visibility = "hidden";
         }
     }
-    console.log(attributeCounts);
-    console.log(attributeInversions);
-    console.log(attributes);
-    console.log(bestData);
-    console.log(attributeValues);
 }   
 
 function reset() {

@@ -226,16 +226,16 @@ function search() {
         document.getElementById("output").innerHTML += "<br> We recommend filling in "+option+" to narrow down the results fastest."
     
     }
-    else if (possibleMinerals.length==1) {
+    else if (possibleMinerals.length==1&&myData[possibleMinerals[0]].notes!="No notes") {
         document.getElementById("output").innerHTML += "<br><br> Some information on "+possibleMinerals[0]+":";
         document.getElementById("output").innerHTML += "<br>"+myData[possibleMinerals[0]].notes
     }
-    if (possibleMinerals.length==3) {
+    if (possibleMinerals.length==3&&(myData[possibleMinerals[0]].notes!="No notes"||myData[possibleMinerals[1]].notes!="No notes"||myData[possibleMinerals[2]].notes!="No notes")) {
         document.getElementById("output").innerHTML += "<br><br> Some information on the minerals:";
         document.getElementById("output").innerHTML += "<table><tr><td>"+possibleMinerals[0]+"</td><td>"+myData[possibleMinerals[0]].notes+"</td></tr><tr><td>"+possibleMinerals[1]+"</td><td>"+myData[possibleMinerals[1]].notes+"</td></tr><tr><td>"+possibleMinerals[2]+"</td><td>"+myData[possibleMinerals[2]].notes+"</td></tr></table>";
     
     }
-    else if (possibleMinerals.length==2) {
+    else if (possibleMinerals.length==2&&(myData[possibleMinerals[0]].notes!="No notes"||myData[possibleMinerals[1]].notes!="No notes")) {
         document.getElementById("output").innerHTML += "<br><br> Some information on the minerals:";
         document.getElementById("output").innerHTML += "<table><tr><td>"+possibleMinerals[0]+"</td><td>"+myData[possibleMinerals[0]].notes+"</td></tr><tr><td>"+possibleMinerals[1]+"</td><td>"+myData[possibleMinerals[1]].notes+"</td></tr></table>";
     

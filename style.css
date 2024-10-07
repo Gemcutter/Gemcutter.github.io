@@ -58,7 +58,7 @@ h1 {
     display: none;
 }
 #rockIdentifier div {
-    width: 50%;
+    flex-grow: 1;
 }
 #mineralIdentifier {
     display: none;
@@ -85,6 +85,11 @@ footer {
     padding: 1rem;
     width: calc(100% - 2rem);
     background-color: #645E5D;
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    color: black;
 }
 html::-webkit-scrollbar {
     display: none;

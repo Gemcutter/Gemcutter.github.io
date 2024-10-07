@@ -6231,7 +6231,7 @@ var rocks = {
     },
     "Quartz Porphyry":{
         "type":["Igneous"],
-        "grain size":["Fine Grained","Glassy","Aphanitic"],
+        "grain size":["Fine Grained, Porphyritic","Glassy, Porphyritic","Aphanitic, Porphyritic"],
         "texture":["Porphyritic"],
         "colour":["Red","Brown","Greenish"],
         "foliated":["No"],

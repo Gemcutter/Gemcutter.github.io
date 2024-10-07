@@ -6256,6 +6256,69 @@ var rocks = {
         "glassScratch":["Yes"],
         "vinegarReaction":["No"]
     },
+    "Boninite":{
+        "type":["Igneous"],
+        "grain size":["Glassy"],
+        "texture":["Porphyritic"],
+        "colour":["Black","Grey"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Pyroxene Andesite":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Porphyritic"],
+        "colour":["Black","Grey","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Trachyte":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Porphyritic"],
+        "colour":["Black","Grey","Purplish","Brown","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Phonolite":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Dense","Porphyritic"],
+        "colour":["Grey","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes","No"],
+        "vinegarReaction":["No"]
+    },
+    "Spillite":{
+        "type":["Igneous"],
+        "grain size":["Aphantic","Glassy"],
+        "texture":["Dense","Porphyritic"],
+        "colour":["Grey","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes","No"],
+        "vinegarReaction":["No"]
+    },
+    "Perlite":{
+        "type":["Igneous"],
+        "grain size":["Glassy"],
+        "texture":["Smooth","Dense","Porphyritic"],
+        "colour":["Grey","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes"],
+        "vinegarReaction":["No"]
+    },
+    "Pitchstone":{
+        "type":["Igneous"],
+        "grain size":["Glassy","Cryptocrystalline"],
+        "texture":["Smooth","Dense","Porphyritic"],
+        "colour":["Grey","Green"],
+        "foliated":["No"],
+        "glassScratch":["Yes","No"],
+        "vinegarReaction":["No"]
+    },
     "Rhyolite":{
         "type":["Igneous"],
         "texture":["Phenocrysts","Flow-banding"],

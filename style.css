@@ -90,3 +90,8 @@ html {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
   }
+@media (max-width:32em), print {
+    nav {
+        font-size: 1.2em;
+    }
+}

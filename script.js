@@ -464,7 +464,7 @@ let touchEndX = 0;
 let currentTab = 0;
 let tabDict = ["home","mineralIdentifier","rockIdentifier"]
 function checkDirection() {
-    if (touchEndX>touchStartX+30) {
+    if (touchEndX>touchStartX+150) {
         if (currentTab==1) {
             goToHomeTab();
         }
@@ -472,7 +472,7 @@ function checkDirection() {
             goToIdTab();
         }
     }
-    else if (touchEndX+30<touchStartX) {
+    else if (touchEndX+150<touchStartX) {
         if (currentTab==0) {
             goToIdTab();
         }

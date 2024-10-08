@@ -5,8 +5,9 @@ body {
     background-color: #A89E9D;
     overflow-x: hidden;
 }
-content {
+.content {
     overflow-x: hidden;
+    position: relative;
 }
 header {
     text-align: center;

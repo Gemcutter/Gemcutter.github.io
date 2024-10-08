@@ -53,30 +53,58 @@ $(document).ready(function(){
         checkDirection()
     });
 });
-
+$(document).on('keydown', function(e) {
+    var keyCode = e.which;
+    if (keyCode=="37") {
+        if (currentTab==1) {
+            goToHomeTab();
+        }
+        else if (currentTab==2) {
+            goToIdTab();
+        }
+    }
+    else if (keyCode=="39") {
+        if (currentTab==0) {
+            goToIdTab();
+        }
+        else if (currentTab==1) {
+            goToRockIdTab();
+        }
+    }
+});
 function goToHomeTab() {
     currentTab = 0;
-    document.getElementById("home").style.display = 'grid';
     document.getElementById("home").style.marginLeft = "1rem"
-    document.getElementById('homeTab').style.backgroundColor = "#CABEBC";
+    document.getElementById('homeTab').style.backgroundColor = "#6D206D";
+    document.getElementById('homeTab').style.boxShadow = "0px 0px 5px 2px #6D206D"
+    document.getElementById('homeTab').style.zIndex = "1";
     //document.getElementById("mineralIdentifier").style.display = 'none';
     document.getElementById("mineralIdentifier").style.marginLeft = "120%"
     //document.getElementById("rockIdentifier").style.display = 'none';
     document.getElementById("rockIdentifier").style.marginLeft = "120%"
-    document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
-    document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('idTab').style.backgroundColor = "#000000";
+    document.getElementById('idTab').style.boxShadow = "0px 0px 0px 0px #000000";
+    document.getElementById('idTab').style.zIndex = "0";
+    document.getElementById('rockIdTab').style.backgroundColor = "#000000";
+    document.getElementById('rockIdTab').style.boxShadow = "0px 0px 0px 0px #000000";
+    document.getElementById('idTab').style.zIndex = "0";
 }
 function goToIdTab() {
     currentTab = 1;
-    document.getElementById("mineralIdentifier").style.display = 'grid';
     document.getElementById("mineralIdentifier").style.marginLeft = "1rem"
-    document.getElementById('idTab').style.backgroundColor = "#CABEBC";
+    document.getElementById('idTab').style.backgroundColor = "#6D206D";
+    document.getElementById('idTab').style.boxShadow = "0px 0px 5px 2px #6D206D"
+    document.getElementById('idTab').style.zIndex = "1";
     //document.getElementById("rockIdentifier").style.display = 'none';
     document.getElementById("rockIdentifier").style.marginLeft = "120%"
     //document.getElementById("home").style.display = 'none';
     document.getElementById("home").style.marginLeft = "-120%"
-    document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
-    document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('homeTab').style.zIndex = "0";
+    document.getElementById('rockIdTab').style.zIndex = "0";
+    document.getElementById('homeTab').style.backgroundColor = "#000000";
+    document.getElementById('homeTab').style.boxShadow = "0px 0px 0px 0px #000000";
+    document.getElementById('rockIdTab').style.backgroundColor = "#000000";
+    document.getElementById('rockIdTab').style.boxShadow = "0px 0px 0px 0px #000000";
 }
 
 function goToRockIdTab() {
@@ -89,13 +117,19 @@ function goToRockIdTab() {
     else {
         document.getElementById("rockIdentifier").style.display = 'grid';
     }
-    document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
+    document.getElementById('rockIdTab').style.backgroundColor = "#6D206D";
+    document.getElementById('rockIdTab').style.boxShadow = "0px 0px 5px 2px #6D206D"
+    document.getElementById('rockIdTab').style.zIndex = "1";
     //document.getElementById("mineralIdentifier").style.display = 'none';
     document.getElementById("mineralIdentifier").style.marginLeft = "-120%"
     //document.getElementById("home").style.display = 'none';
     document.getElementById("home").style.marginLeft = "-120%"
-    document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
-    document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('idTab').style.zIndex = "0";
+    document.getElementById('homeTab').style.zIndex = "0";
+    document.getElementById('idTab').style.backgroundColor = "#000000";
+    document.getElementById('idTab').style.boxShadow = "0px 0px 0px 0px #000000";
+    document.getElementById('homeTab').style.backgroundColor = "#000000";
+    document.getElementById('homeTab').style.boxShadow = "0px 0px 0px 0px #000000";
 }
 class mineral {
     constructor(name, minHardness, maxHardness, minSg, maxSg, streak, lustre, colour, notes) {

@@ -2,15 +2,12 @@ body {
     margin: 0px;
     padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #A89E9D;
+    background-color: black;
     overflow-x: hidden;
 }
 .content {
     overflow-x: hidden;
     position: relative;
-}
-header {
-    text-align: center;
 }
 h1 {
     font-size: 2rem;
@@ -31,8 +28,7 @@ p {
     cursor: pointer;
     position: relative;
     transition: 0.2s;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 }
 .unselectable {
     -webkit-touch-callout: none;
@@ -44,12 +40,16 @@ p {
 }
 nav {
     display: flex;
-    overflow:hidden;
     padding-left: 5%;
 }
 header {
-    background-color: #ECDEDC;
-    box-shadow: 0px 0px 5px 2px #777777;
+    text-align: center;
+    color:#f0f0f0;
+    padding-top: 1rem;
+    background-color: black;
+}
+.title {
+    margin-right: 2rem;
 }
 h1 {
     margin: 0px;
@@ -57,7 +57,8 @@ h1 {
     padding-bottom: 1rem;
 }
 #homeTab {
-    background-color: #CABEBC;
+    background-color: #6D206D;
+    box-shadow: 0px 0px 5px 2px #6D206D;
 }
 #rockIdentifier {
     display: flex;
@@ -75,20 +76,27 @@ main {
     height: 100%;
 }
 .mainSection {
-    box-shadow: 0px 0px 5px 2px #3f3f3f;
+    box-shadow: 0px 0px 5px 2px #310c31;
     border-radius: 5px;
     margin-bottom: 5%;
     width: calc(100% - 5rem);
     margin-left: 1rem;
     margin-top: 1rem;
-    background-color: #ECDEDC;
+    background-color: #310c31;
     min-height: 70%;
     padding: 1.5rem;
     transition: 0.2s;
     position: absolute;
+    color: #f0f0f0;
 }
 table {
     max-width: 20rem;
+    color: #f0f0f0;
+}
+input, select {
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 2px 1px #f0f0f0;
+    border: none;
 }
 #reset, #input {
     visibility: hidden;

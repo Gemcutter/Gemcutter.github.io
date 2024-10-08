@@ -76,13 +76,13 @@ main {
     height: 100%;
 }
 .mainSection {
-    box-shadow: 0px 0px 5px 2px #6d206d;
+    box-shadow: 0px 0px 5px 2px #5a365a;
     border-radius: 5px;
     margin-bottom: 5%;
     width: calc(100% - 5rem);
     margin-left: 1rem;
     margin-top: 1rem;
-    background-color: #6d206d;
+    background-color: #5a365a;
     min-height: 70%;
     padding: 1.5rem;
     transition: 0.2s;

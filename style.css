@@ -124,7 +124,7 @@ html {
         margin-top: 0;
         margin-bottom: 0;
     }
-    main {
+    .mainSection {
         width: calc(100% - 3rem);
         margin-left: 0.75rem;
         margin-top: 0.75rem;

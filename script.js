@@ -3,34 +3,13 @@ myData = null;
 $(document).ready(function(){
     myData = minerals;
     $("#idTab").click(function(){
-        document.getElementById("mineralIdentifier").style.display = 'grid';
-        document.getElementById('idTab').style.backgroundColor = "#CABEBC";
-        document.getElementById("rockIdentifier").style.display = 'none';
-        document.getElementById("home").style.display = 'none';
-        document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
-        document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+        goToIdTab()
     });
     $("#rockIdTab").click(function(){
-        var w = window.innerWidth;
-        if (w>512) {
-            document.getElementById("rockIdentifier").style.display = 'flex';
-        }
-        else {
-            document.getElementById("rockIdentifier").style.display = 'grid';
-        }
-        document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
-        document.getElementById("mineralIdentifier").style.display = 'none';
-        document.getElementById("home").style.display = 'none';
-        document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
-        document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+        goToRockIdTab()
     });
     $("#homeTab").click(function(){
-        document.getElementById("home").style.display = 'grid';
-        document.getElementById('homeTab').style.backgroundColor = "#CABEBC";
-        document.getElementById("mineralIdentifier").style.display = 'none';
-        document.getElementById("rockIdentifier").style.display = 'none';
-        document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
-        document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+        goToHomeTab()
     });
     $("#add").click(function(){
         mineralName = document.getElementById("name").value
@@ -66,8 +45,58 @@ $(document).ready(function(){
     $("#reset").click(function(){
         reset();
     });
+    document.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    document.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        checkDirection()
+    });
 });
 
+function goToHomeTab() {
+    currentTab = 0;
+    document.getElementById("home").style.display = 'grid';
+    document.getElementById("home").style.marginLeft = "1rem"
+    document.getElementById('homeTab').style.backgroundColor = "#CABEBC";
+    //document.getElementById("mineralIdentifier").style.display = 'none';
+    document.getElementById("mineralIdentifier").style.marginLeft = "120%"
+    //document.getElementById("rockIdentifier").style.display = 'none';
+    document.getElementById("rockIdentifier").style.marginLeft = "120%"
+    document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+}
+function goToIdTab() {
+    currentTab = 1;
+    document.getElementById("mineralIdentifier").style.display = 'grid';
+    document.getElementById("mineralIdentifier").style.marginLeft = "1rem"
+    document.getElementById('idTab').style.backgroundColor = "#CABEBC";
+    //document.getElementById("rockIdentifier").style.display = 'none';
+    document.getElementById("rockIdentifier").style.marginLeft = "120%"
+    //document.getElementById("home").style.display = 'none';
+    document.getElementById("home").style.marginLeft = "-120%"
+    document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('rockIdTab').style.backgroundColor = "#ECDEDC";
+}
+
+function goToRockIdTab() {
+    currentTab = 2;
+    var w = window.innerWidth;
+    document.getElementById("rockIdentifier").style.marginLeft = "1rem"
+    if (w>512) {
+        document.getElementById("rockIdentifier").style.display = 'flex';
+    }
+    else {
+        document.getElementById("rockIdentifier").style.display = 'grid';
+    }
+    document.getElementById('rockIdTab').style.backgroundColor = "#CABEBC";
+    //document.getElementById("mineralIdentifier").style.display = 'none';
+    document.getElementById("mineralIdentifier").style.marginLeft = "-120%"
+    //document.getElementById("home").style.display = 'none';
+    document.getElementById("home").style.marginLeft = "-120%"
+    document.getElementById('idTab').style.backgroundColor = "#ECDEDC";
+    document.getElementById('homeTab').style.backgroundColor = "#ECDEDC";
+}
 class mineral {
     constructor(name, minHardness, maxHardness, minSg, maxSg, streak, lustre, colour, notes) {
         this.name = name
@@ -428,4 +457,27 @@ function getObjLen(obj) {
         len ++;
     }
     return len;
+}
+
+let touchStartX = 0;
+let touchEndX = 0;
+let currentTab = 0;
+let tabDict = ["home","mineralIdentifier","rockIdentifier"]
+function checkDirection() {
+    if (touchEndX>touchStartX) {
+        if (currentTab==1) {
+            goToHomeTab();
+        }
+        else if (currentTab==2) {
+            goToIdTab();
+        }
+    }
+    else {
+        if (currentTab==0) {
+            goToIdTab();
+        }
+        else if (currentTab==1) {
+            goToRockIdTab();
+        }
+    }
 }

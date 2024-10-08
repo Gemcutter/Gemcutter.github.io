@@ -3,6 +3,7 @@ body {
     padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
     background-color: #A89E9D;
+    overflow-x: hidden;
 }
 header {
     text-align: center;
@@ -55,25 +56,32 @@ h1 {
     background-color: #CABEBC;
 }
 #rockIdentifier {
-    display: none;
+    display: flex;
+    margin-left: 120%;
 }
 #rockIdentifier div {
     flex-grow: 1;
 }
 #mineralIdentifier {
-    display: none;
+    display: grid;
+    margin-left: 120%;
 }
 main {
+    position: relative;
+    height: 100%;
+}
+.mainSection {
+    box-shadow: 0px 0px 5px 2px #3f3f3f;
+    border-radius: 5px;
+    margin-bottom: 5%;
     width: calc(100% - 5rem);
     margin-left: 1rem;
     margin-top: 1rem;
     background-color: #ECDEDC;
     min-height: 70%;
     padding: 1.5rem;
-    position: relative;
-    box-shadow: 0px 0px 5px 2px #3f3f3f;
-    border-radius: 5px;
-    margin-bottom: 5%;
+    transition: 0.2s;
+    position: absolute;
 }
 table {
     max-width: 20rem;

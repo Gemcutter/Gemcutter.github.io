@@ -119,20 +119,29 @@ html {
     scrollbar-width: none;  
   }
 @media (max-width:32em), print {
-    nav {
-        font-size: 1.2rem;
-    }
     .tab {
-        height: 3rem;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .tab h3 {
         margin-top: 0;
+        font-size: 1rem;
         margin-bottom: 0;
     }
     #definitions {
         margin-top: 2rem;
+    }
+    .title {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    nav {
+        padding-left: 0.5rem;
+        justify-content: center;
+        align-items: center;
     }
 }

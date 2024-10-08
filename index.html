@@ -8,171 +8,173 @@
         <script src = "myData.js"></script>
     </head>
     <body>
-        <header>
-            <h1 class="unselectable">RockID</h1>
-            <nav>
-                <div class="tab unselectable" id="homeTab">
-                    <h3>Home</h3>
+        <content>
+            <header>
+                <h1 class="unselectable">RockID</h1>
+                <nav>
+                    <div class="tab unselectable" id="homeTab">
+                        <h3>Home</h3>
+                    </div>
+                    <div class="tab unselectable" id="idTab">
+                        <h3>Mineral Identifier</h3>
+                    </div>
+                    <div class="tab unselectable" id="rockIdTab">
+                        <h3>Rock Identifier</h3>
+                    </div>
+                </nav>
+            </header>
+            <main id="main">
+                <div id="home" class="unselectable mainSection">
+                    <h2>
+                        Information on RockID
+                    </h2>
+                    <p>
+                        This is a simple tool for amateur geologists or rockhounds. 
+                    </p>
+                    <p>
+                        It is meant as a quick way to narrow down possible options but depending on your inputs it may not give you just one rock or mineral. 
+                    </p>
+                    <p>
+                        To avoid this and improve the accuracy of RockID we recommended trying to tweak the values you have entered and see if any minerals are there for more than one set of inputs.
+                    </p>
+                    <p>
+                        There are also settings that change the margin of error on inputs so you can be as accurate or general as you need.
+                    </p>
+                    <p>
+                        For example on a mineral that is mixed with other minerals you may wish to increase the margin of error on the density.
+                    </p>
                 </div>
-                <div class="tab unselectable" id="idTab">
-                    <h3>Mineral Identifier</h3>
-                </div>
-                <div class="tab unselectable" id="rockIdTab">
-                    <h3>Rock Identifier</h3>
-                </div>
-            </nav>
-        </header>
-        <main id="main">
-            <div id="home" class="unselectable mainSection">
-                <h2>
-                    Information on RockID
+                <div id="mineralIdentifier" class="mainSection">
+                    <h2>
+                    Search minerals here
                 </h2>
-                <p>
-                    This is a simple tool for amateur geologists or rockhounds. 
-                </p>
-                <p>
-                    It is meant as a quick way to narrow down possible options but depending on your inputs it may not give you just one rock or mineral. 
-                </p>
-                <p>
-                    To avoid this and improve the accuracy of RockID we recommended trying to tweak the values you have entered and see if any minerals are there for more than one set of inputs.
-                </p>
-                <p>
-                    There are also settings that change the margin of error on inputs so you can be as accurate or general as you need.
-                </p>
-                <p>
-                    For example on a mineral that is mixed with other minerals you may wish to increase the margin of error on the density.
-                </p>
-            </div>
-            <div id="mineralIdentifier" class="mainSection">
-                <h2>
-                Search minerals here
-               </h2>
-                <table>
-                    <tr>
-                        <td>
-                            <label for="hardness">Hardness: </label>
-                        </td>
-                        <td>
-                            <input type="number" id="searchhardness">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="sg">Specific Gravity (Density): </label>
-                        </td>
-                        <td>
-                            <input type="number" id="searchsg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="streak">Streak Colour: </label>
-                        </td>
-                        <td>
-                            <select id="searchstreak">
-                                <option value="">unset</option>
-                                <option value="White">White</option>
-                                <option value="Yellow">Yellow</option>
-                                <option value="Yellow Brown">Yellow Brown</option>
-                                <option value="Brown">Brown</option>
-                                <option value="Orange">Orange</option>
-                                <option value="Yellow-Orange">Yellow-Orange</option>
-                                <option value="Blueish Green">Blueish Green</option>
-                                <option value="Green">Green</option>
-                                <option value="Greenish Black">Greenish Black</option>
-                                <option value="Blue">Blue</option>
-                                <option value="Purple">Purple</option>
-                                <option value="Red">Red</option>
-                                <option value="Grey-Black">Grey-Black</option>
-                                <option value="Black">Black</option>
-                                <option value="Greyish">Greyish</option>
-                                <option value="Colourless">Colourless</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="lustre">Lustre: </label>
-                        </td>
-                        <td>
-                            <select id="searchlustre">
-                                <option value="">unset</option>
-                                <option value="Adamantine">Adamantine</option>
-                                <option value="Dull">Dull</option>
-                                <option value="Greasy">Greasy</option>
-                                <option value="Metallic">Metallic</option>
-                                <option value="Pearly">Pearly</option>
-                                <option value="Resinous">Resinous</option>
-                                <option value="Silky">Silky</option>
-                                <option value="Submetallic">Submetallic</option>
-                                <option value="Vitreous">Vitreous</option>
-                                <option value="Waxy">Waxy</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="colour">Colour: </label>
-                        </td>
-                        <td>
-                            <select id="searchcolour">
-                                <option value="">unset</option>
-                                <option value="Violet Brown">Violet Brown</option>
-                                <option value="Brown">Brown</option>
-                                <option value="Reddish Brown">Reddish Brown</option>
-                                <option value="Red">Red</option>
-                                <option value="Reddish Orange">Reddish Orange</option>
-                                <option value="Bronze">Bronze</option>
-                                <option value="Orange">Orange</option>
-                                <option value="Gold">Gold</option>
-                                <option value="Yellow-Brown">Yellow-Brown</option>
-                                <option value="Yellow">Yellow</option>
-                                <option value="Green">Green</option>
-                                <option value="Greenish">Greenish</option>
-                                <option value="Greenish Black">Greenish Black</option>
-                                <option value="Blue Grey">Blue Grey</option>
-                                <option value="Blue">Blue</option>
-                                <option value="Purple">Purple</option>
-                                <option value="Indigo">Indigo</option>
-                                <option value="Pink">Pink</option>
-                                <option value="Black">Black</option>
-                                <option value="Grey">Grey</option>
-                                <option value="Greyish">Greyish</option>
-                                <option value="White">White</option>
-                                <option value="Colourless">Colourless</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button id="search">Search</button>
-                        </td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                </table>
-                
-                <p id="output"></p>
-            </div>
-            <div id="rockIdentifier" class="mainSection">
-                <div>
-                    <h2 id="question">Press start to begin.</h2>
-                    <select id="input">
-    
-                    </select>
-                    <input type="button" value="Start" id="submit">
-                    <input type="button" value="Reset" id="reset">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="hardness">Hardness: </label>
+                            </td>
+                            <td>
+                                <input type="number" id="searchhardness">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sg">Specific Gravity (Density): </label>
+                            </td>
+                            <td>
+                                <input type="number" id="searchsg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="streak">Streak Colour: </label>
+                            </td>
+                            <td>
+                                <select id="searchstreak">
+                                    <option value="">unset</option>
+                                    <option value="White">White</option>
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="Yellow Brown">Yellow Brown</option>
+                                    <option value="Brown">Brown</option>
+                                    <option value="Orange">Orange</option>
+                                    <option value="Yellow-Orange">Yellow-Orange</option>
+                                    <option value="Blueish Green">Blueish Green</option>
+                                    <option value="Green">Green</option>
+                                    <option value="Greenish Black">Greenish Black</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Purple">Purple</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Grey-Black">Grey-Black</option>
+                                    <option value="Black">Black</option>
+                                    <option value="Greyish">Greyish</option>
+                                    <option value="Colourless">Colourless</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lustre">Lustre: </label>
+                            </td>
+                            <td>
+                                <select id="searchlustre">
+                                    <option value="">unset</option>
+                                    <option value="Adamantine">Adamantine</option>
+                                    <option value="Dull">Dull</option>
+                                    <option value="Greasy">Greasy</option>
+                                    <option value="Metallic">Metallic</option>
+                                    <option value="Pearly">Pearly</option>
+                                    <option value="Resinous">Resinous</option>
+                                    <option value="Silky">Silky</option>
+                                    <option value="Submetallic">Submetallic</option>
+                                    <option value="Vitreous">Vitreous</option>
+                                    <option value="Waxy">Waxy</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="colour">Colour: </label>
+                            </td>
+                            <td>
+                                <select id="searchcolour">
+                                    <option value="">unset</option>
+                                    <option value="Violet Brown">Violet Brown</option>
+                                    <option value="Brown">Brown</option>
+                                    <option value="Reddish Brown">Reddish Brown</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Reddish Orange">Reddish Orange</option>
+                                    <option value="Bronze">Bronze</option>
+                                    <option value="Orange">Orange</option>
+                                    <option value="Gold">Gold</option>
+                                    <option value="Yellow-Brown">Yellow-Brown</option>
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="Green">Green</option>
+                                    <option value="Greenish">Greenish</option>
+                                    <option value="Greenish Black">Greenish Black</option>
+                                    <option value="Blue Grey">Blue Grey</option>
+                                    <option value="Blue">Blue</option>
+                                    <option value="Purple">Purple</option>
+                                    <option value="Indigo">Indigo</option>
+                                    <option value="Pink">Pink</option>
+                                    <option value="Black">Black</option>
+                                    <option value="Grey">Grey</option>
+                                    <option value="Greyish">Greyish</option>
+                                    <option value="White">White</option>
+                                    <option value="Colourless">Colourless</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="search">Search</button>
+                            </td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p id="output"></p>
                 </div>
-                <div id="definitions">
-                    <h2>Definitions</h2>
-                    <p id="def"></p>
+                <div id="rockIdentifier" class="mainSection">
+                    <div>
+                        <h2 id="question">Press start to begin.</h2>
+                        <select id="input">
+        
+                        </select>
+                        <input type="button" value="Start" id="submit">
+                        <input type="button" value="Reset" id="reset">
+                    </div>
+                    <div id="definitions">
+                        <h2>Definitions</h2>
+                        <p id="def"></p>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <footer>
-            <p>Version 0.4.7</p>
-            <p><a href="references.html">References</a></p>
-        </footer>
+            </main>
+            <footer>
+                <p>Version 0.4.7</p>
+                <p><a href="references.html">References</a></p>
+            </footer>
+        </content>
     </body>
 </html>

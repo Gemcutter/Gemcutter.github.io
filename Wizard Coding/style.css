@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+aside {
+    background-color: #9d9dff;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px #585868;
+    position: fixed;
+    width: 12rem;
+    transition: 0.5s;
+    left: -12rem;
+    z-index: 2;
+}
+main {
+    text-align: center;
+    transition: 0.5s;
+    position: relative;
+    width: 100%;
+}
+.burger-box {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+#backdrop {
+    position: absolute;
+    left:0;
+    width: 100%;
+}
+#code {
+    position: absolute;
+    left: 15%;
+    top: 20vw;
+    background: none;
+    width: 70%;
+    z-index: 1;
+    font-size: 3vw;
+    aspect-ratio: 7.5/10;
+}

@@ -17,6 +17,7 @@ $(document).ready(function(){
         else {
             menuOpen = false;
         }
+        document.getElementById("sidebar").style.transition = "0.5s"
     },20)
     
 });

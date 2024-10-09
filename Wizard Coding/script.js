@@ -9,7 +9,7 @@ $(document).ready(function(){
         tmp = x[i].split("=");
         cookies[tmp[0]] = tmp[1]
     }
-    if (cookies[menuOpen]=="true") {
+    if (cookies["menuOpen"]=="true") {
         menuOpen = true
         document.getElementById("sidebar").style.left = "0"
     }

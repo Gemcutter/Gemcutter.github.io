@@ -9,13 +9,15 @@ $(document).ready(function(){
         tmp = x[i].split("=");
         cookies[tmp[0]] = tmp[1]
     }
-    if (cookies["menuOpen"]=="true") {
-        menuOpen = true
-        document.getElementById("sidebar").style.left = "0"
-    }
-    else {
-        menuOpen = false;
-    }
+    setTimeout(function() {
+        if (cookies["menuOpen"]=="true") {
+            menuOpen = true
+            document.getElementById("sidebar").style.left = "0"
+        }
+        else {
+            menuOpen = false;
+        }
+    },20)
     
 });
 

@@ -19,7 +19,7 @@ $(document).ready(function(){
         }
         setTimeout(function() {
             document.getElementById("sidebar").style.transition = "0.5s"
-        },250)
+        },50)
     },20)
     
 });

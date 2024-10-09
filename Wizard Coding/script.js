@@ -17,7 +17,9 @@ $(document).ready(function(){
         else {
             menuOpen = false;
         }
-        document.getElementById("sidebar").style.transition = "0.5s"
+        setTimeout(function() {
+            document.getElementById("sidebar").style.transition = "0.5s"
+        },500)
     },20)
     
 });

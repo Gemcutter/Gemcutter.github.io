@@ -43,3 +43,6 @@ main {
     font-size: 3vw;
     aspect-ratio: 7.5/10;
 }
+#cast {
+    cursor: pointer;
+}

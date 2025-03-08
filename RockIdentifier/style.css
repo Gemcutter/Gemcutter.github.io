@@ -1,0 +1,145 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+    color: #f0f0f0;
+}
+.content {
+    overflow-x: hidden;
+    position: relative;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+}
+.tab {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+nav {
+    display: flex;
+    padding-left: 5%;
+}
+header {
+    text-align: center;
+    padding-top: 1rem;
+    background-color: black;
+}
+.title {
+    margin-right: 2rem;
+}
+h1 {
+    margin: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#homeTab {
+    background-color: #6D206D;
+    box-shadow: 0px 0px 5px 2px #6D206D;
+}
+#rockIdentifier {
+    display: flex;
+    margin-left: 120%;
+}
+#rockIdentifier div {
+    flex-grow: 1;
+}
+#mineralIdentifier {
+    display: grid;
+    margin-left: 120%;
+}
+main {
+    position: relative;
+    height: 100%;
+}
+.mainSection {
+    box-shadow: 0px 0px 5px 2px #5a365a;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: calc(100% - 5rem);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #5a365a;
+    min-height: 70%;
+    padding: 1.5rem;
+    transition: 0.2s;
+    position: absolute;
+}
+table {
+    max-width: 20rem;
+}
+input, select {
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 2px 1px #f0f0f0;
+    border: none;
+}
+#reset, #input {
+    visibility: hidden;
+}
+footer {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    background-color: #4B164B;
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    color: #f0f0f0;
+}
+html::-webkit-scrollbar {
+    display: none;
+  }
+html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+@media (max-width:32em), print {
+    .tab {
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .tab h3 {
+        margin-top: 0;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    #definitions {
+        margin-top: 2rem;
+    }
+    .title {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    nav {
+        padding-left: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}

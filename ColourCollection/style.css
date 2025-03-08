@@ -7,6 +7,9 @@ body {
     color: #f0f0f0;
     text-align: center;
 }
+.text {
+    transition: 200ms ease-in-out;
+}
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

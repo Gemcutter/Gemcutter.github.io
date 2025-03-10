@@ -9,14 +9,16 @@ $(document).ready(function(){
             let rgb = hexToRgb(newColour)
             let hsl = rgbToHsl(rgb[0],rgb[1],rgb[2])
             let text = document.getElementsByClassName('text')
-            document.getElementById("output").value = newColour
+            document.getElementById("output").innerText = newColour
             if (hsl[2]>0.5) {
                 text.item(0).style.color = "#101010"
                 text.item(1).style.color = "#101010"
+                text.item(2).style.color = "#101010"
             }
             else {
                 text.item(0).style.color = "#f0f0f0"
                 text.item(1).style.color = "#f0f0f0"
+                text.item(2).style.color = "#f0f0f0"
             }
         }
       });

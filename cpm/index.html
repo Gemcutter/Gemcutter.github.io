@@ -3,6 +3,7 @@
     <head>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"> </script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
             html, body {
                 font-family: Arial, sans-serif;
@@ -22,15 +23,18 @@
         <script>
             clicks = {
                 cpm:[],
-                time:[]
+                time:[],
+                recent5Bpm:[]
             };
             clickCount = 0
             timeStart = null;
             prevTimeEnd = null;
             timeEnd = null;
             let myChart = null;
+            recent5 = []
             $(document).ready(function() {
                 const ctx = document.getElementById('box');
+                
                 $("#box").click(function() {
                     if (timeStart==null) {
                         timeStart = new Date()
@@ -40,32 +44,48 @@
                         prevTimeEnd = timeEnd;
                         timeEnd = new Date()
                         clickCount++
+                        recent5.push(timeEnd)
+                        if (recent5.length>6) {
+                            recent5.shift()
+                        }
                         cpm = clickCount/((timeEnd-timeStart)/1000)*60
+                        avgCpm = (recent5.length-1)/((timeEnd-recent5[0])/1000)*60
                         if (prevTimeEnd!=null) {
                             cpm2 = 1/((timeEnd-prevTimeEnd)/1000)*60
                         }
                         else {
                             cpm2 = 1/((timeEnd-timeStart)/1000)*60
                         }
+
                         clicks["cpm"].push(cpm2)
+                        clicks["recent5Bpm"].push(avgCpm)
                         clicks["time"].push((timeEnd-timeStart)/1000)
-                        if (myChart!=null) {
-                            myChart.destroy()
+                        $("#output").html(Math.round(cpm*10)/10)
+                        if (myChart==null) {
+                            myChart = new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: clicks["time"],
+                                    datasets: [{
+                                        label: 'CPM',
+                                        data: clicks["cpm"],
+                                        fill: false,
+                                        borderColor: 'rgb(75, 192, 192)',
+                                        tension: 0.1
+                                    },{
+                                        label: 'Averaged CPM (last 5)',
+                                        data: clicks["recent5Bpm"],
+                                        fill: false,
+                                        borderColor: 'rgb(255, 100, 100)',
+                                        tension: 0.1
+                                    }]
+                                }
+                            });
                         }
-                        $("#output").html(cpm)
-                        myChart = new Chart(ctx, {
-                            type: 'line',
-                            data: {
-                                labels: clicks["time"],
-                                datasets: [{
-                                    label: 'CPM over time',
-                                    data: clicks["cpm"],
-                                    fill: false,
-                                    borderColor: 'rgb(75, 192, 192)',
-                                    tension: 0.1
-                                }]
-                            }
-                        });
+                        else {
+                            myChart.update();
+                        }
+                        
                     }
                 })
             })

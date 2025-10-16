@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grade Calculator</title>
+    <script>
+        let rowsMade = 0
+        function run() {
+            document.getElementById('calculate').addEventListener('click', ()=>{
+                let table = document.getElementById("assessments")
+                let rows = table.childNodes
+                let details = []
+                for (let i in rows) {
+                    if (rows[i].id != undefined) {
+                        rowId = rows[i].id
+                        let name = document.getElementById("col1"+rowId).value
+                        let weighting = document.getElementById("col2"+rowId).value
+                        let score = document.getElementById("col3"+rowId).value
+                        details.push(new Assessment(name, weighting, score))
+                    }
+                }
+                let totalComplete = 0
+                let totalEarned = 0
+                for (let i in details) {
+                    totalComplete += details[i].weighting
+                    if (details[i].assessmentValue!= undefined) {
+                        totalEarned += details[i].assessmentValue
+                    }
+                }
+                
+                if (totalEarned>0.5) {
+                    requiredAverage = 0
+                    document.getElementById("results").innerText = "You have already achieved a passing grade"
+                }
+                else {
+                    let requiredRemaining = 0.5-totalEarned
+                    let requiredAverage = requiredRemaining/(1-totalComplete)
+                    document.getElementById("results").innerText = "You need to get an average of "+requiredAverage*100+"% in your remaining assessments"
+                }
+                
+            })
+            document.getElementById('newRow').addEventListener('click', ()=>{
+                let table = document.getElementById("assessments")
+                let row = document.createElement("tr")
+                let rowNum = rowsMade
+                row.id = rowNum
+                let col1 = document.createElement("td")
+                let col1input = document.createElement("input")
+                col1input.id = "col1"+rowNum
+                col1.appendChild(col1input)
+                row.appendChild(col1)
+                let col2 = document.createElement("td")
+                let col2input = document.createElement("input")
+                col2input.id = "col2"+rowNum
+                col2.appendChild(col2input)
+                row.appendChild(col2)
+                let col3 = document.createElement("td")
+                let col3input = document.createElement("input")
+                col3input.id = "col3"+rowNum
+                col3.appendChild(col3input)
+                row.appendChild(col3)
+                let col4 = document.createElement("td")
+                let col4btn = document.createElement("button")
+                col4btn.innerText = "Delete Row"
+                col4btn.addEventListener('click', ()=>{deleteRow(rowNum)})
+                col4.appendChild(col4btn)
+                row.appendChild(col4)
+                table.appendChild(row)
+                rowsMade++
+            })
+            
+        }
+        function deleteRow(rowID) {
+                document.getElementById(rowID).remove()
+            }
+        class Assessment {
+                constructor(name, weighting, score) {
+                    this.name = name
+                    this.weighting = this.parsePercentage(weighting)
+                    this.score = this.parsePercentage(score)
+                    this.assessmentValue = undefined
+                    if (score != "") {
+                        this.assessmentValue = this.parsePercentage(weighting)*this.parsePercentage(score)
+                    }                    
+                }
+                parsePercentage(percentage) {
+                    if (percentage[percentage.length-1]=="%") {
+                        percentage = percentage.slice(0,percentage.length-1)
+                    }
+                    let int = parseInt(percentage)
+                    return int/100
+                }
+            }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body onload="run()">
+    <h1>Grade Calculator</h1>
+    <p>Welcome to the Grade Calculator!</p>
+    <button id="newRow">Add Assessment</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Weighting</th>
+                <th>Score</th>
+                <th>functions</th>
+            </tr>
+        </thead>
+        <tbody id="assessments">
+
+        </tbody>
+    </table>
+    <button id="calculate">Calculate</button>
+    <h1 id="results"></h1>
+</body>
+</html>

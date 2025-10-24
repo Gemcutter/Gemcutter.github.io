@@ -11,7 +11,7 @@ $(document).ready(()=>{
                     </div>
                 </div>
                 <div className="col-4">
-                    <img src="photo.jpg" width="100%"></img>
+                    <img src="photo.jpg" width="100%" alt="A photo of Artemis in an outdoor setting. She is wearing a loose white shirt and blue jeans."></img>
                 </div>
             </main>
         );
@@ -83,19 +83,19 @@ $(document).ready(()=>{
 
                                 <div className="mySlides fade">
                                     <div className="numbertext">1 / 3</div>
-                                    <img src="tree.png" className="carousel-img"></img>
+                                    <img src="tree.png" className="carousel-img" alt="A sketchy cartoon styled image of a tree"></img>
                                     <div className="text">A tree drawn by myself based on a greyled sketch done by my sister</div>
                                 </div>
 
                                 <div className="mySlides fade">
                                     <div className="numbertext">2 / 3</div>
-                                    <img src="beach.jpg" className="carousel-img"></img>
+                                    <img src="beach.jpg" className="carousel-img" alt="A photo of a beach"></img>
                                     <div className="text">A photo from a family holiday at Lake Tyers Beach</div>
                                 </div>
 
                                 <div className="mySlides fade">
                                     <div className="numbertext">3 / 3</div>
-                                    <img src="firework.jpg" className="carousel-img"></img>
+                                    <img src="firework.jpg" className="carousel-img" alt="A long exposure photo of fireworks"></img>
                                     <div className="text">A long exposure photo of the new years fireworks in Papendrecht, The Netherlands</div>
                                 </div>
 

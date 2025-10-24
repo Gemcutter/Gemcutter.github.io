@@ -3,13 +3,15 @@ $(document).ready(()=>{
     function Home() {
         return (
             <main className="row">
-                <div className="col-8">
+                <div className="col-7">
                     <h1 className="unselectable">Artemis Crawford</h1>
                     <div>
                         <h2>Welcome to my portfolio website!</h2>
                         <p>This site is a good way to see who I am and what I do. Feel free to have a look around, see what I've been up to and what I can do!</p>
+                        <p>You can have a look at some of my code on my github <a className="inlineLink" href="https://github.com/Gemcutter">here</a></p>
                     </div>
                 </div>
+                <div className="col-1"></div>
                 <div className="col-4">
                     <img src="photo.jpg" width="100%" alt="A photo of Artemis in an outdoor setting. She is wearing a loose white shirt and blue jeans."></img>
                 </div>
@@ -70,7 +72,7 @@ $(document).ready(()=>{
                     <h1 className="unselectable">About Me</h1>
                     <br></br>
                     <div className="row">
-                        <div className="col-8">
+                        <div className="col-7">
                             <div>
                                 <h2>Who I am</h2>
                                 <p>My name Artemis Crawford, I live in the eastern suburbs of melbourne and study Computer Science at La Trobe University for my Bachelors degree. I also do a lot of programming in my spare time because I enjoy the development process and get a lot of joy out of creating web apps, games, tools and more.</p>
@@ -78,6 +80,7 @@ $(document).ready(()=>{
                                 <p>I'm a friendly person and love getting to know people. My friends describe me as happy and outgoing, and I've honed my social skills for building rapport and extracting peoples meanings and intents in various customer facing jobs through the years.</p>
                             </div>
                         </div>
+                        <div className="col-1"></div>
                         <div className="col-4">
                             <div className="slideshow-container">
 
@@ -113,10 +116,11 @@ $(document).ready(()=>{
                     </div>
                     <div className="row">
                         <div className="col-4"></div>
-                        <div className="col-8">
+                        <div className="col-1"></div>
+                        <div className="col-7">
                             <div>
                                 <h2>My Skills</h2>
-                                <p>I am proficient with Js, HTML, and CSS. Given that I made this site I'd say I'm pretty decent. I have some experience with both React.js and with Bootstrap, and I've used both in creating this web page, feel free to have a look at some of the source code.</p>
+                                <p>I am proficient with JS, HTML5, and CSS. Given that I made this site I'd say I'm pretty decent. I have some experience with both React.js and with Bootstrap, and I've used both in creating this web page, feel free to have a look at some of the source code.</p>
                                 <p>I have experience with Node.js and the Express framework, I don't have any examples on this site unfortunately as this is just a static page without any backend, but I have a number of personal projects that have made good use of it from games to simple tools.</p>
                                 <p>I have strong python skills and for my capstone project at University I have created (with my team) an app for Triskele Labs to scan a local network for devices and determine whether they are agent capable. I do have some other personal projects in python but obviously I can't display them here.</p>
                             </div>

@@ -90,6 +90,10 @@ main a:hover {
     text-decoration: none;
     color: #4d0f52;
 }
+.inlineLink {
+    color: #e73df3;
+    font-size: 1em;
+}
 
 .slideshow-container {
   max-width: 100%;
@@ -216,5 +220,8 @@ main a:hover {
     .col-6 {
         max-width: 100%;
         margin-top: 2em;
+    }
+    .col-1 {
+        max-width: 0%;
     }
 }

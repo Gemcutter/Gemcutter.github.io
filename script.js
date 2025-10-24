@@ -7,7 +7,7 @@ $(document).ready(()=>{
                     <h1 className="unselectable">Artemis Crawford</h1>
                     <div>
                         <h2>Welcome to my portfolio website!</h2>
-                        <p>This site is a good way to see who I am and what I do. Feel free to have a look around, see what I've been up to and what I can do.</p>
+                        <p>This site is a good way to see who I am and what I do. Feel free to have a look around, see what I've been up to and what I can do!</p>
                     </div>
                 </div>
                 <div className="col-4">

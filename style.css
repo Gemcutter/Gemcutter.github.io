@@ -18,6 +18,10 @@ nav {
     color: white;
     margin-top: 0em;
     margin-bottom: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .navbar {
     flex-grow: 1;
@@ -173,4 +177,28 @@ main a:hover {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+@media (max-width:29.25em), print {
+    .navbar {
+        display: block;
+    }
+    
+}
+@media (max-width:48em), print {
+    .row {
+        display: block;
+    }
+    .col-8 {
+        max-width: 100%;
+    }
+    .carousel-img {
+        width: calc(90vw - 4em - 30px);
+    }
+    .col-4 {
+        max-width: 100%;
+    }
+    .col-6 {
+        max-width: 100%;
+        margin-top: 2em;
+    }
 }

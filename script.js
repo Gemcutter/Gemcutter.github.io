@@ -75,9 +75,9 @@ $(document).ready(()=>{
                         <div className="col-7">
                             <div>
                                 <h2>Who I am</h2>
-                                <p>My name Artemis Crawford, I live in the eastern suburbs of melbourne and study Computer Science at La Trobe University for my Bachelors degree. I also do a lot of programming in my spare time because I enjoy the development process and get a lot of joy out of creating web apps, games, tools and more.</p>
+                                <p>My name is Artemis Crawford, I live in the eastern suburbs of Melbourne and study Computer Science at La Trobe University for my Bachelors degree. I also do a lot of programming in my spare time because I enjoy the development process and get a lot of joy out of creating web apps, games, tools and more.</p>
                                 <p>In my spare time I find myself making digital art with drawing software (my preference is Krita), creating silly games for my friends, and keeping up with a handful of shows. I do have some less frequent hobbies, namely photography and geology that I always eventually end up going back to.</p>
-                                <p>I'm a friendly person and love getting to know people. My friends describe me as happy and outgoing, and I've honed my social skills for building rapport and extracting peoples meanings and intents in various customer facing jobs through the years.</p>
+                                <p>I'm a friendly person and love getting to know people. My friends describe me as happy and outgoing, and I've honed my social skills for building rapport and extracting people's meanings and intents in various customer facing jobs through the years.</p>
                             </div>
                         </div>
                         <div className="col-1"></div>
@@ -87,7 +87,7 @@ $(document).ready(()=>{
                                 <div className="mySlides fade">
                                     <div className="numbertext">1 / 3</div>
                                     <img src="tree.png" className="carousel-img" alt="A sketchy cartoon styled image of a tree"></img>
-                                    <div className="text">A tree drawn by myself based on a greyled sketch done by my sister</div>
+                                    <div className="text">A tree drawn by myself based on a grey lead sketch done by my sister</div>
                                 </div>
 
                                 <div className="mySlides fade">
@@ -99,7 +99,7 @@ $(document).ready(()=>{
                                 <div className="mySlides fade">
                                     <div className="numbertext">3 / 3</div>
                                     <img src="firework.jpg" className="carousel-img" alt="A long exposure photo of fireworks"></img>
-                                    <div className="text">A long exposure photo of the new years fireworks in Papendrecht, The Netherlands</div>
+                                    <div className="text">A long exposure photo of the New Year's fireworks in Papendrecht, The Netherlands</div>
                                 </div>
 
                                 <a className="prev" onClick={prev}>&#10094;</a>
@@ -120,9 +120,9 @@ $(document).ready(()=>{
                         <div className="col-7">
                             <div>
                                 <h2>My Skills</h2>
-                                <p>I am proficient with JS, HTML5, and CSS. Given that I made this site I'd say I'm pretty decent. I have some experience with both React.js and with Bootstrap, and I've used both in creating this web page, feel free to have a look at some of the source code.</p>
+                                <p>I am proficient with JS, HTML5, and CSS. I have made this site myself so it is a testament to my abilities. I have some experience with both React.js and with Bootstrap, and I've used both in creating this web page, feel free to have a look at some of the source code.</p>
                                 <p>I have experience with Node.js and the Express framework, I don't have any examples on this site unfortunately as this is just a static page without any backend, but I have a number of personal projects that have made good use of it from games to simple tools.</p>
-                                <p>I have strong python skills and for my capstone project at University I have created (with my team) an app for Triskele Labs to scan a local network for devices and determine whether they are agent capable. I do have some other personal projects in python but obviously I can't display them here.</p>
+                                <p>I have strong Python skills and for my Capstone Project at University I have created (with my team) an app for Triskele Labs to scan a local network for devices and determine whether they are agent capable. I do have some other personal projects in Python but obviously I can't display them here.</p>
                             </div>
                         </div>
                     </div>

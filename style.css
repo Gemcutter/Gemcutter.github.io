@@ -178,7 +178,7 @@ main a:hover {
   animation-duration: 0.5s;
 }
 
-.col-8 {
+.col-7 {
     padding-left: 0;
     padding-right: 0;
     margin-top: 1em;
@@ -208,7 +208,7 @@ main a:hover {
     .row {
         display: block;
     }
-    .col-8 {
+    .col-7 {
         max-width: 100%;
     }
     .carousel-img {

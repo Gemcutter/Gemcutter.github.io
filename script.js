@@ -9,6 +9,7 @@ $(document).ready(()=>{
                         <h2>Welcome to my portfolio website!</h2>
                         <p>This site is a good way to see who I am and what I do. Feel free to have a look around, see what I've been up to and what I can do!</p>
                         <p>You can have a look at some of my code on my github <a className="inlineLink" href="https://github.com/Gemcutter">here</a></p>
+                        <p>If you want to contact me please send me an email at <a className="inlineLink" href="mailto:artemisagate73@gmail.com">artemisagate73@gmail.com</a></p>
                     </div>
                 </div>
                 <div className="col-1"></div>

@@ -167,6 +167,12 @@ $(document).ready(()=>{
                             <iframe className='unselectable' src="projects/rewardSystem/index.html" width="100%" height="300px"></iframe>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col-6">
+                            <a href="projects/evolution/index.html">Natural Selection</a>
+                            <iframe className='unselectable' src="projects/evolution/index.html" width="100%" height="300px"></iframe>
+                        </div>
+                    </div>
                 </div>
             </main>
         );

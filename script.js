@@ -1,5 +1,6 @@
 $(document).ready(()=>{
     const root = ReactDOM.createRoot(document.getElementById('root'))
+    let demo
     function Home() {
         return (
             <main className="row">
@@ -62,9 +63,49 @@ $(document).ready(()=>{
     function slide3() {
         currentSlide(3)
     }
+    class Demo1 extends React.Component {
+        componentDidMount() {
+            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo2 />)})
+        }
+        render() {
+            return (
+                <div>
+                    <p>This is some basic content!</p>
+                    <input type="button" value='Next' id="next"></input>
+                </div>
+            );
+        }
+    }
+    class Demo2 extends React.Component {
+        componentDidMount() {
+            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo3 />)})
+        }
+        render() {
+            return (
+                <div>
+                    <p>This is probably still content!</p>
+                    <input type="button" value='Next' id="next"></input>
+                </div>
+            );
+        }
+    }
+    class Demo3 extends React.Component {
+        componentDidMount() {
+            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo1 />)})
+        }
+        render() {
+            return (
+                <div>
+                    <p>Yknow, I'm not sure if this is really content at this point</p>
+                    <input type="button" value='Next' id="next"></input>
+                </div>
+            );
+        }
+    }
     class About extends React.Component {
         componentDidMount() {
-            
+            demo = ReactDOM.createRoot(document.getElementById('demoBox'))
+            demo.render(<Demo1 />);  
             showSlides(slideIndex)
         }
         render() {
@@ -125,9 +166,8 @@ $(document).ready(()=>{
                             </div>
                         </div>
                         <div className="col-1"></div>
-                        <div className="col-4"></div>
+                        <div className="col-4" id='demoBox'><p>d</p></div>
                     </div>
-                    
                 </main>
             );
         }

@@ -5,7 +5,36 @@
     --background:linear-gradient(45deg,rgba(243, 219, 242, 0.4) 0%,rgba(255, 110, 169, 0.4) 90%);
     --dark:#4d0f52;
 }
-
+#demoBox {
+    border: #383838 2px solid;
+    border-radius: 1em;
+    display: block;
+    min-height: 16em;
+    padding: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    background: var(--background);
+}
+#next {
+    border-top-right-radius: 0.75em;
+    border-bottom-left-radius: 0.75em;
+    padding: 0.5em;
+    border: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background: var(--dark);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#next:hover {
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+    background: var(--primary-colour);
+}
 body {
     margin: 0px;
     padding: 0px;

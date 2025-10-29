@@ -73,15 +73,6 @@ $(document).ready(()=>{
                     <h1 className="unselectable">About Me</h1>
                     <br></br>
                     <div className="row">
-                        <div className="col-7">
-                            <div>
-                                <h2>Who I am</h2>
-                                <p>My name is Artemis Crawford, I live in the eastern suburbs of Melbourne and study Computer Science at La Trobe University for my Bachelors degree. I also do a lot of programming in my spare time because I enjoy the development process and get a lot of joy out of creating web apps, games, tools and more.</p>
-                                <p>In my spare time I find myself making digital art with drawing software (my preference is Krita), creating silly games for my friends, and keeping up with a handful of shows. I do have some less frequent hobbies, namely photography and geology that I always eventually end up going back to.</p>
-                                <p>I'm a friendly person and love getting to know people. My friends describe me as happy and outgoing, and I've honed my social skills for building rapport and extracting people's meanings and intents in various customer facing jobs through the years.</p>
-                            </div>
-                        </div>
-                        <div className="col-1"></div>
                         <div className="col-4">
                             <div className="slideshow-container">
 
@@ -114,10 +105,17 @@ $(document).ready(()=>{
                                 <span className="dot" onClick={slide3}></span>
                             </div>
                         </div>
+                        <div className="col-1"></div>
+                        <div className="col-7">
+                            <div>
+                                <h2>Who I am</h2>
+                                <p>My name is Artemis Crawford, I live in the eastern suburbs of Melbourne and study Computer Science at La Trobe University for my Bachelors degree. I also do a lot of programming in my spare time because I enjoy the development process and get a lot of joy out of creating web apps, games, tools and more.</p>
+                                <p>In my spare time I find myself making digital art with drawing software (my preference is Krita), creating silly games for my friends, and keeping up with a handful of shows. I do have some less frequent hobbies, namely photography and geology that I always eventually end up going back to.</p>
+                                <p>I'm a friendly person and love getting to know people. My friends describe me as happy and outgoing, and I've honed my social skills for building rapport and extracting people's meanings and intents in various customer facing jobs through the years.</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="row">
-                        <div className="col-4"></div>
-                        <div className="col-1"></div>
                         <div className="col-7">
                             <div>
                                 <h2>My Skills</h2>
@@ -126,6 +124,8 @@ $(document).ready(()=>{
                                 <p>I have strong Python skills and for my Capstone Project at University I have created (with my team) an app for Triskele Labs to scan a local network for devices and determine whether they are agent capable. I do have some other personal projects in Python but obviously I can't display them here.</p>
                             </div>
                         </div>
+                        <div className="col-1"></div>
+                        <div className="col-4"></div>
                     </div>
                     
                 </main>

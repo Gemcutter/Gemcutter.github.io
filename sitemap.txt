@@ -1,0 +1,8 @@
+https://gemcutter.github.io/index.html
+https://gemcutter.github.io/projects/ColourCollection/index.html
+https://gemcutter.github.io/projects/cpm/index.html
+https://gemcutter.github.io/projects/evolution/index.html
+https://gemcutter.github.io/projects/gradeCalculator/index.html
+https://gemcutter.github.io/projects/rewardSystem/index.html
+https://gemcutter.github.io/projects/RockIdentifier/index.html
+https://gemcutter.github.io/projects/WizardCoding/index.html

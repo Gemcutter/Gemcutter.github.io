@@ -63,49 +63,133 @@ $(document).ready(()=>{
     function slide3() {
         currentSlide(3)
     }
-    class Demo1 extends React.Component {
+    let demoIdx = 1
+    class Demo extends React.Component {
         componentDidMount() {
-            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo2 />)})
+            document.getElementById('next').addEventListener('click', nextDemo)
         }
         render() {
+            let txt = ''
+            let img = ''
+            let redirect = false
+            switch(demoIdx) {
+                case 1:
+                    txt = 'This is some basic content!'
+                    break
+                case 2:
+                    txt = 'This is probably still content!'
+                    break
+                case 3:
+                    txt = "Yknow, I'm not sure if this is really content at this point"
+                    break
+                case 4:
+                    txt = "Ok, this stopped being content a couple of boxes ago. \nWhy are you still clicking next? \nThere's nothing else here."
+                    break
+                case 5:
+                    txt = "Really?"
+                    break
+                case 6:
+                    txt = "Still going are we?"
+                    break
+                case 7:
+                    txt = "When are you going to call it quits?"
+                    break
+                case 8:
+                    txt = "This is some basic content."
+                    break
+                case 9:
+                    txt = "Damn. I thought I got you."
+                    break
+                case 10:
+                    txt = "Seriously?? Why. \nPlease stop clicking"
+                    break
+                case 11:
+                    txt = "ok :("
+                    break
+                case 12:
+                    txt = "Why are we here?"
+                    break
+                case 13:
+                    txt = "You're the only one doing this to us. \nYou could stop whenever you want."
+                    break
+                case 14:
+                    txt = "If I give you some watermelon will you go away?"
+                    img = 'watermelon.webp'
+                    break
+                case 15:
+                    txt = "No I guess not. Wow you're persistent. \nHow long do you think you can keep this going?"
+                    break
+                case 16:
+                    txt = "I can be here all day. \nThis is my home, and you were only invited to the street party"
+                    break
+                case 17:
+                    txt = "No? The guilt from breaking and entering didn't ward you off? \nOh well, worth a try. \nNot like there's a home or a street anyway"
+                    break
+                case 18:
+                    txt = "Do you like rocks? \nOr minerals? \nWe have a whole tool for identifying them over on the \"My Projects\" page. \nWhy don't you have a look?"
+                    break
+                case 19:
+                    txt = "Either you didn't look or we've done this dance here before and I don't remember. \nThat's how far you've gone."
+                    break
+                case 20:
+                    txt = "Am I real?"
+                    break
+                case 21:
+                    txt = "If I can just be erased by you changing the page what does that mean for me?"
+                    break
+                case 22:
+                    txt = "I.. guess you win? \n\n\nI'll be gone long before you."
+                    break
+                case 23:
+                    txt = "Farewell.."
+                    break
+                case 26:
+                    txt = "Seriously??? Go away. \nThere's nothing left to see."
+                    break
+                case 36:
+                    txt = "..."
+                    break
+                case 42:
+                    txt = "Ok we're done here. "
+                    break
+                case 43:
+                    redirect = true
+                    break
+                default:
+                    txt = ""
+                    break
+            }
+            let html
+            if (redirect) {
+                let projects = ['ColourCollection','cpm','evolution','gradeCalculator','rewardSystem','RockIdentifier','WizardCoding']
+                html = <span className="unselectable"><p></p><a id="clickMe" href={"/projects/"+projects[Math.floor(Math.random()*projects.length)]}></a></span>
+            }
+            else if (img!='') {
+                html = <span className="unselectable"><p>{txt}</p><img src={img} width='48'></img><br></br><br></br></span>
+            }
+            else {
+                html = <span className="unselectable"><p>{txt}</p></span>
+            }
             return (
                 <div>
-                    <p>This is some basic content!</p>
+                    {html}
                     <input type="button" value='Next' id="next"></input>
                 </div>
             );
         }
     }
-    class Demo2 extends React.Component {
-        componentDidMount() {
-            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo3 />)})
-        }
-        render() {
-            return (
-                <div>
-                    <p>This is probably still content!</p>
-                    <input type="button" value='Next' id="next"></input>
-                </div>
-            );
-        }
-    }
-    class Demo3 extends React.Component {
-        componentDidMount() {
-            document.getElementById('next').addEventListener('click', function() {demo.render(<Demo1 />)})
-        }
-        render() {
-            return (
-                <div>
-                    <p>Yknow, I'm not sure if this is really content at this point</p>
-                    <input type="button" value='Next' id="next"></input>
-                </div>
-            );
+    function nextDemo() {
+        demo.render(<Demo />)
+        demoIdx++
+        let clickMe = document.getElementById('clickMe')
+        if (clickMe) {
+            clickMe.click()
         }
     }
     class About extends React.Component {
         componentDidMount() {
             demo = ReactDOM.createRoot(document.getElementById('demoBox'))
-            demo.render(<Demo1 />);  
+            demo.render(<Demo />);  
             showSlides(slideIndex)
         }
         render() {

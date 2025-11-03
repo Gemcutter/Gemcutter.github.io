@@ -24,8 +24,8 @@
                 let totalComplete = 0
                 let totalEarned = 0
                 for (let i in details) {
-                    totalComplete += details[i].weighting
                     if (details[i].assessmentValue!= undefined) {
+                        totalComplete += details[i].weighting
                         totalEarned += details[i].assessmentValue
                     }
                 }
@@ -37,6 +37,7 @@
                 else {
                     let requiredRemaining = desiredGrade/100-totalEarned
                     let requiredAverage = requiredRemaining/(1-totalComplete)
+                    console.log(requiredRemaining, requiredAverage)
                     document.getElementById("results").innerText = "You need to get an average of "+requiredAverage*100+"% in your remaining assessments"
                 }
                 

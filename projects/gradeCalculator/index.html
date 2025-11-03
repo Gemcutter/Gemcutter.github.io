@@ -6,6 +6,7 @@
     <title>Grade Calculator</title>
     <script>
         let rowsMade = 0
+        let desiredGrade = 50
         function run() {
             document.getElementById('calculate').addEventListener('click', ()=>{
                 let table = document.getElementById("assessments")
@@ -29,12 +30,12 @@
                     }
                 }
                 
-                if (totalEarned>0.5) {
+                if (totalEarned>desiredGrade/100) {
                     requiredAverage = 0
                     document.getElementById("results").innerText = "You have already achieved a passing grade"
                 }
                 else {
-                    let requiredRemaining = 0.5-totalEarned
+                    let requiredRemaining = desiredGrade/100-totalEarned
                     let requiredAverage = requiredRemaining/(1-totalComplete)
                     document.getElementById("results").innerText = "You need to get an average of "+requiredAverage*100+"% in your remaining assessments"
                 }
@@ -68,6 +69,9 @@
                 row.appendChild(col4)
                 table.appendChild(row)
                 rowsMade++
+            })
+            document.getElementById('desiredGrade').addEventListener('change', ()=>{
+                desiredGrade = document.getElementById('desiredGrade').value
             })
             
         }
@@ -125,6 +129,9 @@
 <body onload="run()">
     <h1>Grade Calculator</h1>
     <p>Welcome to the Grade Calculator!</p>
+    <label for="desiredGrade">Desired Grade: </label>
+    <input id="desiredGrade" value="50">
+    <br>
     <button id="newRow">Add Assessment</button>
     <table>
         <thead>

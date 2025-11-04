@@ -7,6 +7,7 @@
     <script>
         let rowsMade = 0
         let desiredGrade = 50
+        let dataTypes = []
         function run() {
             document.getElementById('calculate').addEventListener('click', ()=>{
                 let table = document.getElementById("assessments")
@@ -16,8 +17,17 @@
                     if (rows[i].id != undefined) {
                         rowId = rows[i].id
                         let name = document.getElementById("col1"+rowId).value
-                        let weighting = document.getElementById("col2"+rowId).value
-                        let score = document.getElementById("col3"+rowId).value
+                        let weighting = parseFloat(document.getElementById("col2"+rowId).value)
+                        let score = parseFloat(document.getElementById("col3"+rowId).value)
+                        if (Number.isNaN(score)) {
+                            score=0
+                        }
+                        if (Number.isNaN(weighting)) {
+                            weighting=0
+                        }
+                        if (dataTypes[rowId]==="Marks") {
+                            score = score/weighting*100
+                        }
                         details.push(new Assessment(name, weighting, score))
                     }
                 }
@@ -37,11 +47,12 @@
                 else {
                     let requiredRemaining = desiredGrade/100-totalEarned
                     let requiredAverage = requiredRemaining/(1-totalComplete)
-                    console.log(requiredRemaining, requiredAverage)
-                    document.getElementById("results").innerText = "You need to get an average of "+requiredAverage*100+"% in your remaining assessments"
+                    
+                    document.getElementById("results").innerText = "You need to get an average of "+round(requiredAverage*100, 2)+"% in your remaining assessments"
                 }
                 
             })
+            
             document.getElementById('newRow').addEventListener('click', ()=>{
                 let table = document.getElementById("assessments")
                 let row = document.createElement("tr")
@@ -63,22 +74,47 @@
                 col3.appendChild(col3input)
                 row.appendChild(col3)
                 let col4 = document.createElement("td")
-                let col4btn = document.createElement("button")
-                col4btn.innerText = "Delete Row"
-                col4btn.addEventListener('click', ()=>{deleteRow(rowNum)})
-                col4.appendChild(col4btn)
+                let col4btn1 = document.createElement("button")
+                col4btn1.innerText = "Delete Row"
+                col4btn1.addEventListener('click', ()=>{deleteRow(rowNum)})
+                col4.appendChild(col4btn1)
+                let col4btn2 = document.createElement("button")
+                col4btn2.innerText = "Percentage"
+                col4btn2.addEventListener('click', ()=>{toggleInputType(col4btn2, rowNum)})
+                col4.appendChild(col4btn2)
                 row.appendChild(col4)
                 table.appendChild(row)
+                dataTypes.push('Percentage')
                 rowsMade++
+                
             })
             document.getElementById('desiredGrade').addEventListener('change', ()=>{
                 desiredGrade = document.getElementById('desiredGrade').value
             })
             
         }
-        function deleteRow(rowID) {
-                document.getElementById(rowID).remove()
+        function round(n, digits) {
+            let multiplier = Math.pow(10,digits)
+            if (n%1>0.5) {
+                return Math.ceil(multiplier*n)/multiplier
             }
+            return Math.floor(multiplier*n)/multiplier
+        }
+        function deleteRow(rowID) {
+            document.getElementById(rowID).remove()
+            delete dataTypes[rowID]
+        }
+        function toggleInputType(button, rowIdx) {
+            let currentType = button.innerText
+            if (currentType==="Percentage") {
+                button.innerText = "Marks"
+            }
+            else {
+                button.innerText = "Percentage"
+            }
+            currentType = button.innerText
+            dataTypes[rowIdx] = currentType
+        }
         class Assessment {
                 constructor(name, weighting, score) {
                     this.name = name
@@ -102,6 +138,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            text-align: center;
+            background-color: #d4ffff;
         }
         table {
             width: 100%;
@@ -112,14 +150,22 @@
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+            background-color: white;
         }
         th {
             background-color: #f2f2f2;
         }
+        input {
+            width: 4em;
+        }
         button {
             padding: 10px 15px;
-            margin-top: 10px;
             cursor: pointer;
+        }
+        table {
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
         }
         #results {
             margin-top: 20px;
@@ -132,6 +178,7 @@
     <p>Welcome to the Grade Calculator!</p>
     <label for="desiredGrade">Desired Grade: </label>
     <input id="desiredGrade" value="50">
+    <br>
     <br>
     <button id="newRow">Add Assessment</button>
     <table>
@@ -147,6 +194,7 @@
 
         </tbody>
     </table>
+    <br>
     <button id="calculate">Calculate</button>
     <h1 id="results"></h1>
 </body>

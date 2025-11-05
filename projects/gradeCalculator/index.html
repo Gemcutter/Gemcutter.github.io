@@ -19,10 +19,13 @@
                         let name = document.getElementById("col1"+rowId).value
                         let weighting = parseFloat(document.getElementById("col2"+rowId).value)
                         let score = document.getElementById("col3"+rowId).value
-                        if (score.includes("/")) {
+                        if (score.includes("/")&&!Number.isNaN(weighting)) {
                             let numerator = score.split('/')[0]
                             let denominator = score.split('/')[1]
                             score = numerator/denominator*100
+                        }
+                        else if (dataTypes[rowId]==="Marks"&&!Number.isNaN(score)&&!Number.isNaN(weighting)) {
+                            score = score/weighting*100
                         }
                         else {
                             score = parseFloat(score)
@@ -33,12 +36,10 @@
                         if (Number.isNaN(weighting)) {
                             weighting=''
                         }
-                        if (dataTypes[rowId]==="Marks"&&!Number.isNaN(score)&&!Number.isNaN(weighting)) {
-                            score = score/weighting*100
-                        }
                         details.push(new Assessment(name, weighting, score))
                     }
                 }
+                console.log(details)
                 let totalComplete = 0
                 let totalEarned = 0
                 for (let i in details) {

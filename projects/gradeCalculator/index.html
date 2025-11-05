@@ -18,14 +18,22 @@
                         rowId = rows[i].id
                         let name = document.getElementById("col1"+rowId).value
                         let weighting = parseFloat(document.getElementById("col2"+rowId).value)
-                        let score = parseFloat(document.getElementById("col3"+rowId).value)
+                        let score = document.getElementById("col3"+rowId).value
+                        if (score.includes("/")) {
+                            let numerator = score.split('/')[0]
+                            let denominator = score.split('/')[1]
+                            score = numerator/denominator*100
+                        }
+                        else {
+                            score = parseFloat(score)
+                        }
                         if (Number.isNaN(score)) {
-                            score=0
+                            score=''
                         }
                         if (Number.isNaN(weighting)) {
-                            weighting=0
+                            weighting=''
                         }
-                        if (dataTypes[rowId]==="Marks") {
+                        if (dataTypes[rowId]==="Marks"&&!Number.isNaN(score)&&!Number.isNaN(weighting)) {
                             score = score/weighting*100
                         }
                         details.push(new Assessment(name, weighting, score))
@@ -39,15 +47,15 @@
                         totalEarned += details[i].assessmentValue
                     }
                 }
-                
-                if (totalEarned>desiredGrade/100) {
-                    requiredAverage = 0
-                    document.getElementById("results").innerText = "You have already achieved a passing grade"
+                let requiredRemaining = desiredGrade/100-totalEarned
+                let requiredAverage = requiredRemaining/(1-totalComplete)
+                if (totalEarned>=desiredGrade/100) {
+                    document.getElementById("results").innerText = "You have already achieved your goal grade"
+                }
+                else if (requiredAverage>1) {
+                    document.getElementById("results").innerText = "You cannot acheive your goal grade"
                 }
                 else {
-                    let requiredRemaining = desiredGrade/100-totalEarned
-                    let requiredAverage = requiredRemaining/(1-totalComplete)
-                    
                     document.getElementById("results").innerText = "You need to get an average of "+round(requiredAverage*100, 2)+"% in your remaining assessments"
                 }
                 
@@ -121,7 +129,7 @@
                     this.weighting = this.parsePercentage(weighting)
                     this.score = this.parsePercentage(score)
                     this.assessmentValue = undefined
-                    if (score != "") {
+                    if (score !== "") {
                         this.assessmentValue = this.parsePercentage(weighting)*this.parsePercentage(score)
                     }                    
                 }
@@ -129,7 +137,7 @@
                     if (percentage[percentage.length-1]=="%") {
                         percentage = percentage.slice(0,percentage.length-1)
                     }
-                    let int = parseInt(percentage)
+                    let int = parseFloat(percentage)
                     return int/100
                 }
             }
